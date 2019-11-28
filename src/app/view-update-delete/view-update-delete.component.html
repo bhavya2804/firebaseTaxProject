@@ -1,0 +1,62 @@
+<h1>View - Update - Delete Details</h1>
+
+<div class="container">
+	<div class="form-group" >
+		<label for="sale_purchase">Select:</label><br>
+		<input type="radio" class="type" name="slectType" value='purchase' [(ngModel)]="viewFiled"> PURCHASE
+		<input type="radio" class="type" name="slectType" value="sales" [(ngModel)]="viewFiled"> SALE
+		<input type="radio" class="type" name="slectType" value="salesGst" [(ngModel)]="viewFiled"> SALE(GST)
+	</div>
+
+	<div class="container" *ngIf="viewFiled==='purchase' || viewFiled==='salesGst'">
+		<div class="form-group">
+			<label for="date">Date:</label>
+			<input type="date" class="form-control" [(ngModel)]="searchDate" placeholder="Enter Date" name="date">
+		</div>
+		<div class="form-group">
+			<label for="invoiceno">Invoice No:</label>
+			<input type="text" class="form-control" [(ngModel)]="searchInvoiceNo" placeholder="Enter Invoice No" name="invoiceno">
+		</div>
+		<button class="btn btn-info" (click)="getData()" >Search</button>
+	</div>
+
+	<div class="container" *ngIf="viewFiled==='sales'">
+		<div class="form-group">
+			<label for="date">Date:</label>
+			<input type="date" class="form-control" [(ngModel)]="searchDate" placeholder="Enter Date">
+		</div>
+		<button class="btn btn-info" (click)="getData()">Search</button>
+	</div>
+</div>
+
+<div class="container" *ngIf="showTable==='Yes'">
+  <table class="table table-bordered table-responsive-md table-striped text-center">
+  <thead>
+  <tr>
+		<th scope="col">No</th>
+    <th scope="col" *ngIf="viewFiled==='purchase'">Company</th>
+		<th scope="col" *ngIf="viewFiled==='salesGst'">Customer</th>
+    <th scope="col">Date</th>
+    <th scope="col" *ngIf="viewFiled==='purchase' || viewFiled==='salesGst'">Invoice No</th>
+		<th scope="col" *ngIf="viewFiled==='purchase' || viewFiled==='salesGst'"><i class="fa fa-edit"> </i>percentage</th>
+		<th scope="col" *ngIf="viewFiled==='purchase' || viewFiled==='salesGst'"><i class="fa fa-edit"> </i>Amount</th>
+		<th scope="col" *ngIf="viewFiled==='sales'"><i class="fa fa-edit"> </i>Amount 12</th>
+		<th scope="col" *ngIf="viewFiled==='sales'"><i class="fa fa-edit"> </i>Amount 18</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let record of tableData let i = index" [attr.data-index]="i" >
+		<td><i class="fa fa-close" style="color:red" (click)="deleteData(i)"> </i>{{i+1}}</td>
+    <td *ngIf="viewFiled==='purchase'">{{record.company}}</td>
+		<td *ngIf="viewFiled==='salesGst'">{{record.name}}</td>
+    <td>{{record.date}}</td>
+    <td *ngIf="viewFiled==='purchase' || viewFiled==='salesGst'">{{record.invoiceNo}}</td>
+		<td *ngIf="viewFiled==='purchase' || viewFiled==='salesGst'"><span #el3 contenteditable (blur)="tableData[i].percentage=el3.innerText">{{record.percentage}}</span></td>
+		<td *ngIf="viewFiled==='purchase' || viewFiled==='salesGst'"><span #el4 contenteditable (blur)="tableData[i].amount=el4.innerText">{{record.amount}}</span></td>
+		<td *ngIf="viewFiled==='sales'"><span #el5 contenteditable (blur)="tableData[i].salesAmt12=el5.innerText">{{record.salesAmt12}}</span></td>
+		<td *ngIf="viewFiled==='sales'"><span #el6 contenteditable (blur)="tableData[i].salesAmt18=el6.innerText">{{record.salesAmt18}}</span></td>
+  </tr>
+  </tbody>
+</table>
+<button class="btn btn-warning" (click)="updateData()">Update</button>
+</div>
