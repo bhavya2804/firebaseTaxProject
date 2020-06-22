@@ -1,4 +1,8 @@
 button{
-	margin:3vw;
+	margin:1vw;
 	margin-bottom: 0px;
+}
+
+.form-group{
+	padding: 5px;
 }

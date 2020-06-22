@@ -9,13 +9,14 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class DataProviderService {
 
-	constructor() {}
+	constructor() {
+	}
 
 	getDealers() {
 		let dealersData = [];
 		let db = firebase.database().ref("dealers");
 		db.on('child_added', function(snapshot) {
-			dealersData.push(snapshot.key);
+			dealersData.push({company:snapshot.key,gstNo:snapshot.val().gstNo});
 		});
 		return dealersData;
 	}
@@ -27,6 +28,13 @@ export class DataProviderService {
 			customersData.push(snapshot.key);
 		});
 		return customersData;
+	}
+
+	getQueryData(){
+		var ref = firebase.database().ref("purchase");
+	  return ref.once('value').then(function(snapshot) {
+	    return snapshot.val();
+	  });
 	}
 
 	getExcelObject() {
@@ -42,63 +50,83 @@ export class DataProviderService {
 		object[7]=0;
 		object[6]=0;
 
+		function getObj(obj,out) {
+			for (let prop in obj) {
+	        if (obj.hasOwnProperty(prop)) {
+	            if (typeof obj[prop] == "object"){
+	               getObj(obj[prop],out);
+	            } else {
+	              out.push(obj);
+	              return;
+	            }
+	        }
+	    }
+			return;
+		}
+
 		//for purchase
-		firebase.database().ref('purchase').once('value').then(function(snapshot) {
+		firebase.database().ref('purchase').once('child_added').then(function(snapshot) {
 			snapshot.forEach(function(childsnapshot) {
-				if (childsnapshot.val().percentage == 18) {
-					let j = 1.18;
-					let value = (childsnapshot.val().amount / j);
-					let tax = (childsnapshot.val().amount - value) / 2;
-					tax=Math.floor(tax);
-					value=Math.floor(value);
-					let gstIn = "0";
-					let ref = firebase.database().ref('dealers/' + childsnapshot.val().company).once('value').then(function(snapshot) {
-						gstIn = snapshot.val().gstNo;
-						Purchase18object.push({
-							'InvoiceDate': childsnapshot.val().date,
-							'Name': childsnapshot.val().company,
-							'GST/TIN': gstIn,
-							'Invoice No': childsnapshot.val().invoiceNo,
-							'Value': value,
-							'percentage': childsnapshot.val().percentage,
-							'State Tax': tax,
-							'Central Tax': tax,
-							'Amount': childsnapshot.val().amount
+				let out= childsnapshot.val();
+				let obj=[];
+				getObj(out,obj);
+				for(let i=0;i<obj.length;i++){
+					if (obj[i].amount18 != 0 && obj[i].completed==0) {
+						let j = 1.18;
+						let value = (obj[i].amount18 / j);
+						let tax = (obj[i].amount18 - value) / 2;
+						tax=Math.floor(tax);
+						value=Math.floor(value);
+						let gstIn = "0";
+						let ref = firebase.database().ref('dealers/' + obj[i].company).once('value').then(function(snapshot) {
+							gstIn = snapshot.val().gstNo;
+							Purchase18object.push({
+								'InvoiceDate': obj[i].date,
+								'Name': obj[i].company,
+								'GST/TIN': gstIn,
+								'InvoiceNo': obj[i].invoiceNo,
+								'Value': value,
+								'percentage': '18',
+								'State Tax': tax,
+								'Central Tax': tax,
+								'Amount': obj[i].amount18
+							});
 						});
-					});
-				}
-				if (childsnapshot.val().percentage == 12) {
-					let j = 1.12;
-					let value = (childsnapshot.val().amount / j);
-					let tax = (childsnapshot.val().amount - value) / 2;
-					tax=Math.floor(tax);
-					value=Math.floor(value);
-					let gstIn = "0";
-					let ref = firebase.database().ref('dealers/' + childsnapshot.val().company).once('value').then(function(snapshot) {
-						gstIn = snapshot.val().gstNo;
-						Purchase12object.push({
-							'InvoiceDate': childsnapshot.val().date,
-							'Name': childsnapshot.val().company,
-							'GST/TIN': gstIn,
-							'Invoice No': childsnapshot.val().invoiceNo,
-							'Value': value,
-							'percentage': childsnapshot.val().percentage,
-							'State Tax': tax,
-							'Central Tax': tax,
-							'Amount': childsnapshot.val().amount
+					}
+					if (obj[i].amount12 != 0 && obj[i].completed==0) {
+						let j = 1.12;
+						let value = (obj[i].amount12 / j);
+						let tax = (obj[i].amount12 - value) / 2;
+						tax=Math.floor(tax);
+						value=Math.floor(value);
+						let gstIn = "0";
+						let ref = firebase.database().ref('dealers/' + obj[i].company).once('value').then(function(snapshot) {
+							gstIn = snapshot.val().gstNo;
+							Purchase12object.push({
+								'InvoiceDate': obj[i].date,
+								'Name': obj[i].company,
+								'GST/TIN': gstIn,
+								'InvoiceNo':obj[i].invoiceNo,
+								'Value': value,
+								'percentage': '12',
+								'State Tax': tax,
+								'Central Tax': tax,
+								'Amount': obj[i].amount12
+							});
 						});
-					});
+					}
 				}
+
 			});
 		});
 
 		// sales gst 3%, 1%
 		firebase.database().ref('sales').orderByChild("date").once('value').then(function(snapshot) {
 				snapshot.forEach(function(childsnapshot) {
-						if (childsnapshot.val().invoiceNo && childsnapshot.val().percentage == 12) {
+						if (childsnapshot.val().invoiceNo && childsnapshot.val().amount12 && childsnapshot.val().completed==0) {
 							let j = 1.12;
-							let value = (childsnapshot.val().amount / j);
-							let tax = (childsnapshot.val().amount - value) / 2;
+							let value = (childsnapshot.val().amount12 / j);
+							let tax = (childsnapshot.val().amount12 - value) / 2;
 							tax=Math.floor(tax);
 							value=Math.floor(value);
 							let gstNo = "0";
@@ -111,31 +139,31 @@ export class DataProviderService {
 									'Name': childsnapshot.val().name,
 									'GST/TIN': gstNo,
 									'Phone Number': phoneNum,
-									'Invoice No': childsnapshot.val().invoiceNo,
+									'InvoiceNo': childsnapshot.val().invoiceNo,
 									'Value': value,
-									'percentage': childsnapshot.val().percentage,
+									'percentage': "12",
 									'State Tax': tax,
 									'Central Tax': tax,
-									'Amount': childsnapshot.val().amount
+									'Amount': childsnapshot.val().amount12
 								});
 								saleGst112object.push({
 									'InvoiceDate': childsnapshot.val().date,
 									'Name': childsnapshot.val().name,
 									'GST/TIN': gstNo,
 									'Phone Number': phoneNum,
-									'Invoice No': childsnapshot.val().invoiceNo,
+									'InvoiceNo': childsnapshot.val().invoiceNo,
 									'Value': value,
-									'percentage': childsnapshot.val().percentage,
+									'percentage': "12",
 									'State Tax': tax,
 									'Central Tax': tax,
-									'Amount': childsnapshot.val().amount
+									'Amount': childsnapshot.val().amount12
 								});
 							});
 						}
-						if (childsnapshot.val().invoiceNo && childsnapshot.val().percentage == 18) {
+						if (childsnapshot.val().invoiceNo && childsnapshot.val().amount18 && childsnapshot.val().completed==0) {
 							let j = 1.18;
-							let value = (childsnapshot.val().amount / j);
-							let tax = (childsnapshot.val().amount - value) / 2;
+							let value = (childsnapshot.val().amount18 / j);
+							let tax = (childsnapshot.val().amount18 - value) / 2;
 							tax=Math.floor(tax);
 							value=Math.floor(value);
 							let gstNo = "0";
@@ -150,10 +178,10 @@ export class DataProviderService {
 									'Phone Number': phoneNum,
 									'Invoice No': childsnapshot.val().invoiceNo,
 									'Value': value,
-									'percentage': childsnapshot.val().percentage,
+									'percentage': "18",
 									'State Tax': tax,
 									'Central Tax': tax,
-									'Amount': childsnapshot.val().amount
+									'Amount': childsnapshot.val().amount18
 								});
 								saleGst118object.push({
 									'InvoiceDate': childsnapshot.val().date,
@@ -162,14 +190,14 @@ export class DataProviderService {
 									'Phone Number': phoneNum,
 									'Invoice No': childsnapshot.val().invoiceNo,
 									'Value': value,
-									'percentage': childsnapshot.val().percentage,
+									'percentage': "18",
 									'State Tax': tax,
 									'Central Tax': tax,
-									'Amount': childsnapshot.val().amount
+									'Amount': childsnapshot.val().amount18
 								});
 							});
 						}
-						if (childsnapshot.val().salesAmt12 && childsnapshot.val().salesAmt12!= 0) {
+						if (childsnapshot.val().salesAmt12 && childsnapshot.val().salesAmt12!= 0 && childsnapshot.val().completed==0) {
 							saleGst312object.push({
 								'InvoiceDate': childsnapshot.val().date,
 								'Name': "By Sale",
@@ -182,10 +210,10 @@ export class DataProviderService {
 								'Central Tax': " ",
 								'Amount': childsnapshot.val().salesAmt12
 							});
-							saleSum12+=childsnapshot.val().salesAmt12;
+							saleSum12+=parseInt(childsnapshot.val().salesAmt12);
 							object[6]=saleSum12;
 						}
-						if (childsnapshot.val().salesAmt18 && childsnapshot.val().salesAmt18!= 0) {
+						if (childsnapshot.val().salesAmt18 && childsnapshot.val().salesAmt18!= 0 && childsnapshot.val().completed==0) {
 						 saleGst318object.push({
 							 'InvoiceDate': childsnapshot.val().date,
 							 'Name': "By Sale",
@@ -198,7 +226,7 @@ export class DataProviderService {
 							 'Central Tax': " ",
 							 'Amount': childsnapshot.val().salesAmt18
 						 });
-						 saleSum18+=childsnapshot.val().salesAmt18;
+						 saleSum18+=parseInt(childsnapshot.val().salesAmt18);
 						 object[7]=saleSum18;
 					 }
 				});

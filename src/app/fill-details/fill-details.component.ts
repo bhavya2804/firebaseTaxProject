@@ -29,15 +29,15 @@ export class FillDetailsComponent implements OnInit {
   purchaseInt={
     "company":"",
     "date":"",
-    "amount":"",
-    "percentage":"",
+    "amount12":"",
+    "amount18":"",
     "invoiceNo":""
   };
   purchase={
     "company":"",
     "date":"",
-    "amount":"",
-    "percentage":"",
+    "amount12":"",
+    "amount18":"",
     "invoiceNo":""
   };
 
@@ -56,13 +56,18 @@ export class FillDetailsComponent implements OnInit {
   salesGstCustomer:string;
   salesGstInvoiceno:string;
   salesGstDate:string;
-  salesGstPercent:string;
-  salesGstAmt:string;
+  salesGstAmt12:string;
+  salesGstAmt18:string;
+  tableData: any = [];
+  headers: any = [];
+
 
   constructor(dataProviderService: DataProviderService)
   {
     this.dealers= dataProviderService.getDealers();
     this.customers= dataProviderService.getCustomers();
+    this.tableData = dataProviderService.getExcelObject();
+    console.log(this.tableData);
   }
 
   ngOnInit()
@@ -108,9 +113,11 @@ export class FillDetailsComponent implements OnInit {
       firebase.database().ref("purchase/"+this.purchase.invoiceNo+'-'+this.purchase.date).set({
           company:this.purchase.company,
           date:this.purchase.date,
-          amount:eval(this.purchase.amount),
-          percentage:this.purchase.percentage,
-          invoiceNo:this.purchase.invoiceNo
+          amount12:eval(this.purchase.amount12),
+          amount18:eval(this.purchase.amount18),
+          invoiceNo:this.purchase.invoiceNo,
+          completed: 0,
+          create_time:new Date().toLocaleString()
   			},function(error) {
           if (error) {
             alert("Data could not be Inserted." + error);
@@ -118,14 +125,16 @@ export class FillDetailsComponent implements OnInit {
             alert("Data Inserted successfully.");
           }
         });
-      this.selectType="done";
+      // this.selectType="done";
       this.purchase=JSON.parse(JSON.stringify(this.purchaseInt));
     }
     else if(text=='Sales'){
       firebase.database().ref("sales/"+this.salesDate).set({
           date:this.salesDate,
           salesAmt12:eval(this.salesAmt12)>0?eval(this.salesAmt12):0,
-          salesAmt18:eval(this.salesAmt18)>0?eval(this.salesAmt18):0
+          salesAmt18:eval(this.salesAmt18)>0?eval(this.salesAmt18):0,
+          completed: 0,
+          create_time:new Date().toLocaleString()
   			},function(error) {
           if (error) {
             alert("Data could not be Inserted." + error);
@@ -133,7 +142,7 @@ export class FillDetailsComponent implements OnInit {
             alert("Data Inserted successfully.");
           }
         });
-      this.selectType="done";
+      // this.selectType="done";
       this.salesDate="";
       this.salesAmt12="";
       this.salesAmt18="";
@@ -143,8 +152,10 @@ export class FillDetailsComponent implements OnInit {
           name:this.salesGstCustomer,
           invoiceNo:this.salesGstInvoiceno,
           date:this.salesGstDate,
-          percentage:this.salesGstPercent,
-          amount:eval(this.salesGstAmt)
+          amount12:eval(this.salesGstAmt12)>0?eval(this.salesGstAmt12):0,
+          amount18:eval(this.salesGstAmt18)>0?eval(this.salesGstAmt18):0,
+          completed: 0,
+          create_time:new Date().toLocaleString()
   			},function(error) {
           if (error) {
             alert("Data could not be Inserted." + error);
@@ -152,12 +163,12 @@ export class FillDetailsComponent implements OnInit {
             alert("Data Inserted successfully.");
           }
         });
-      this.selectType="done";
+      // this.selectType="done";
       this.salesGstCustomer="";
       this.salesGstInvoiceno="";
       this.salesGstDate="";
-      this.salesGstPercent="";
-      this.salesGstAmt="";
+      this.salesGstAmt12="";
+      this.salesGstAmt18="";
     }
   }
 

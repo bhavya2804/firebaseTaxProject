@@ -1,133 +1,134 @@
-<h1>Fill Details</h1>
-
-<div class="container form-group">
-	<label>Select:</label>
-	<select class="form-control" [(ngModel)]="selectType">
-			<option selected disabled>Select the Type</option>
-			<option value="p">Purchase</option>
-			<option value="s">Sales</option>
-			<option value="sg">Sale GST</option>
-	</select>
-</div>
-
-<!-- Purchase Section -->
-<div class="container purchase" *ngIf="selectType==='p'">
-	<h1>Purchase</h1>
-	<div class="form-group">
-		<label for="Company">Company:</label>
- 		<select class="selectpicker form-control" data-show-subtext="true" data-live-search="true" [(ngModel)]="purchase.company" name="company">
- 			<option *ngFor="let dealer of dealers" value="{{dealer}}">{{dealer}}</option>
-		</select>
-		<button class="btn btn-link" (click)="showAddDealerDiv='true'">Add New Company</button>
+<div class="fluid-container">
+	<h1>Fill Details</h1>
+	<div class="container form-group">
+		<label class="radio-inline">
+      <input type="radio" name="option" id="radio" [(ngModel)]="selectType" value ='p' checked>Purchase
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="option" id="radio" [(ngModel)]="selectType" value ='s'>Sale
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="option" id="radio" [(ngModel)]="selectType" value ='sg'>Sale GST
+    </label>
 	</div>
+	<div class="row">
+		<div class="col-xs-4">
+			<!-- Purchase Section -->
+			<div class="container purchase" *ngIf="selectType==='p'">
+				<h1>Purchase</h1>
+				<div class="form-group">
+					<label for="Company">Company:</label>
+			 		<select class="selectpicker form-control" data-show-subtext="true" data-live-search="true" [(ngModel)]="purchase.company" name="company">
+			 			<option *ngFor="let dealer of dealers" value="{{dealer}}">{{dealer}}</option>
+					</select>
+					<button class="btn btn-link" (click)="showAddDealerDiv='true'">Add New Company</button>
+				</div>
 
-	<!-- Hidden Div element  -->
-		<div class="container" *ngIf="showAddDealerDiv==='true'">
-			<div class="form-group">
-				<label for="name">Company:</label>
-				<input type="text" class="form-control" [(ngModel)]="purchaseNew.company" placeholder="Enter Name" name="company" required>
+				<!-- Hidden Div element  -->
+					<div class="container" *ngIf="showAddDealerDiv==='true'">
+						<div class="form-group">
+							<label for="name">Company:</label>
+							<input type="text" class="form-control" [(ngModel)]="purchaseNew.company" placeholder="Enter Name" name="company" required>
+						</div>
+						<div class="form-group">
+							<label for="gst">Gst No:</label>
+							<input type="text" class="form-control" [(ngModel)]="purchaseNew.gstNo" placeholder="Enter GST NO" name="gst_no" required>
+						</div>
+						<button class="btn btn-success" type="submit" (click)="saveDealersCustomersDetails('Dealers');">Add New Company</button>
+						<button class="btn btn-danger" type="cancel" (click)="showAddDealerDiv='false'">Cancel</button>
+					</div>
+
+				<div *ngIf="showAddDealerDiv==='false'">
+					<div class="form-group">
+						 <label for="date">Date:</label>
+						 <input type="date" class="form-control" style="width:280px;" name="date" placeholder="Enter Date" [(ngModel)]="purchase.date" required>
+					 </div>
+					 <div class="form-group">
+						 <label for="invoiceno">Invoice No:</label>
+						 <input type="text" class="form-control"  [(ngModel)]="purchase.invoiceNo" placeholder="Enter Invoice No" name="invoiceno"  required>
+					 </div>
+					 <div class="form-group">
+						 <label for="amt">Amount 12%:</label>
+						 <input type="text" class="form-control" [(ngModel)]="purchase.amount12" placeholder="Enter Amount 12%" name="amt" required>
+					 </div>
+					 <div class="form-group">
+						<label for="amt">Amount 18%:</label>
+						<input type="text" class="form-control" [(ngModel)]="purchase.amount18" placeholder="Enter Amount 18%" name="amt" required>
+					</div>
+					 <button type="submit" class="btn btn-info" (click)="saveDetails('Purchase')">Submit</button>
+				</div>
 			</div>
-			<div class="form-group">
-				<label for="gst">Gst No:</label>
-				<input type="text" class="form-control" [(ngModel)]="purchaseNew.gstNo" placeholder="Enter GST NO" name="gst_no" required>
+
+			<!--Sales Section  -->
+			<div class="container sales" *ngIf="selectType==='s'">
+				<h1>Sales</h1>
+				<div class="form-group">
+					<label for="Date">Date:</label>
+			 		<input type="date" class="form-control" style="width:280px;" [(ngModel)]="salesDate" placeholder="Enter Date" name="date" required>
+				</div>
+				<div class="form-group">
+					<label for="amt">Amount For 12%:</label>
+					<input type="text" class="form-control" [(ngModel)]="salesAmt12" name="amt12" placeholder="Enter Amount of 12%" value='0' required>
+				</div>
+				<div class="form-group">
+					<label for="amt">Amount For 18%:</label>
+					<input type="text" class="form-control" [(ngModel)]="salesAmt18" name="amt18" placeholder="Enter Amount of 18%" value='0'  required>
+				</div>
+				<button type="submit" class="btn btn-info" (click)="saveDetails('Sales')">Submit</button>
 			</div>
-			<button class="btn btn-success" type="submit" (click)="saveDealersCustomersDetails('Dealers');">Add New Company</button>
-			<button class="btn btn-danger" type="cancel" (click)="showAddDealerDiv='false'">Cancel</button>
-		</div>
 
-	<div *ngIf="showAddDealerDiv==='false'">
-		<div class="form-group">
-			 <label for="date">Date:</label>
-			 <input type="date" class="form-control" style="width:280px;" name="date" placeholder="Enter Date" [(ngModel)]="purchase.date" required>
-		 </div>
-		 <div class="form-group">
-			 <label for="invoiceno">Invoice No:</label>
-			 <input type="text" class="form-control"  [(ngModel)]="purchase.invoiceNo" placeholder="Enter Invoice No" name="invoiceno"  required>
-		 </div>
-		 <div class="form-group">
-			 <label for="percent">Percentage:</label>
-		 <select class="form-control" name="percent" [(ngModel)]="purchase.percentage" required>
-		 <option selected disabled>percent</option>
-			 <option value="12">12</option>
-			 <option value="18">18</option>
-		 </select>
-		 </div>
-		 <div class="form-group">
-			 <label for="amt">Amount:</label>
-			 <input type="text" class="form-control" [(ngModel)]="purchase.amount" placeholder="Enter Amount" name="amt" required>
-		 </div>
-		 <button type="submit" class="btn btn-info" (click)="saveDetails('Purchase')">Submit</button>
-	</div>
-</div>
+			<!-- Sales GST Section -->
+			<div class="container sales_gst" *ngIf="selectType==='sg'">
+				<h1>Sales GST</h1>
+				<div class="form-group">
+					<label for="Customer">Customer:</label>
+			 		<select class="selectpicker form-control" data-show-subtext="true" data-live-search="true" [(ngModel)]="salesGstCustomer" name="Customer">
+			 			<option *ngFor="let customer of customers" value="{{customer}}">{{customer}}</option>
+					</select>
+					<button class="btn btn-link" (click)="showAddCustomersDiv='true'">Add New Customer</button>
+				</div>
 
-<!--Sales Section  -->
-<div class="container sales" *ngIf="selectType==='s'">
-	<h1>Sales</h1>
-	<div class="form-group">
-		<label for="Date">Date:</label>
- 		<input type="date" class="form-control" style="width:280px;" [(ngModel)]="salesDate" placeholder="Enter Date" name="date" required>
-	</div>
-	<div class="form-group">
-		<label for="amt">Amount For 12%:</label>
-		<input type="text" class="form-control" [(ngModel)]="salesAmt12" name="amt12" placeholder="Enter Amount of 12%" value='0' required>
-	</div>
-	<div class="form-group">
-		<label for="amt">Amount For 18%:</label>
-		<input type="text" class="form-control" [(ngModel)]="salesAmt18" name="amt18" placeholder="Enter Amount of 18%" value='0'  required>
-	</div>
-	<button type="submit" class="btn btn-info" (click)="saveDetails('Sales')">Submit</button>
-</div>
+				<!-- Hidden Div for customers -->
+				<div class="container" *ngIf="showAddCustomersDiv==='true'">
+					<div class="form-group">
+						<label for="name">Customer:</label>
+						<input type="text" class="form-control" [(ngModel)]="salesGstNew.customer" placeholder="Enter Name" name="name" required>
+					</div>
+					<div class="form-group">
+						<label for="gst">Gst No:</label>
+						<input type="text" class="form-control" [(ngModel)]="salesGstNew.gst_no" placeholder="Enter GST NO" name="gst_no" required>
+					</div>
+					<div class="form-group">
+						<label for="gst">Phone No:</label>
+						<input type="text" class="form-control" [(ngModel)]="salesGstNew.phone_no" placeholder="Enter Phone NO" name="phone_no" required>
+					</div>
+					 <button class="btn btn-success" type="submit" (click)="saveDealersCustomersDetails('Customers');">Add New Company</button>
+					 <button class="btn btn-danger" type="cancel" (click)="showAddCustomersDiv='false'">Cancel</button>
+				</div>
 
-<!-- Sales GST Section -->
-<div class="container sales_gst" *ngIf="selectType==='sg'">
-	<h1>Sales GST</h1>
-	<div class="form-group">
-		<label for="Customer">Customer:</label>
- 		<select class="selectpicker form-control" data-show-subtext="true" data-live-search="true" [(ngModel)]="salesGstCustomer" name="Customer">
- 			<option *ngFor="let customer of customers" value="{{customer}}">{{customer}}</option>
-		</select>
-		<button class="btn btn-link" (click)="showAddCustomersDiv='true'">Add New Customer</button>
-	</div>
-
-	<!-- Hidden Div for customers -->
-	<div class="container" *ngIf="showAddCustomersDiv==='true'">
-		<div class="form-group">
-			<label for="name">Customer:</label>
-			<input type="text" class="form-control" [(ngModel)]="salesGstNew.customer" placeholder="Enter Name" name="name" required>
+				<div class="conatiner" *ngIf="showAddCustomersDiv==='false'">
+					<div class="form-group">
+						<label for="invoiceno">Invoice No:</label>
+						<input type="text" class="form-control" [(ngModel)]="salesGstInvoiceno" placeholder="Enter Invoice No" name="invoiceno" required>
+					</div>
+					<div class="form-group">
+						<label for="date">Invoice Date:</label>
+				  	<input type="date" class="form-control" style="width:280px;" [(ngModel)]="salesGstDate" placeholder="Enter Date" name="date" required>
+					</div>
+					<div class="form-group">
+						<label for="amt">Amount12:</label>
+						<input type="text" class="form-control" [(ngModel)]="salesGstAmt12" placeholder="Enter Amount 12%" name="amt" required>
+					</div>
+					<div class="form-group">
+						<label for="amt">Amount18:</label>
+						<input type="text" class="form-control" [(ngModel)]="salesGstAmt18" placeholder="Enter Amount 18%" name="amt" required>
+					</div>
+					<button type="submit" class="btn btn-info" (click)="saveDetails('sales')">Submit</button>
+				</div>
+			</div>
 		</div>
-		<div class="form-group">
-			<label for="gst">Gst No:</label>
-			<input type="text" class="form-control" [(ngModel)]="salesGstNew.gst_no" placeholder="Enter GST NO" name="gst_no" required>
+		<div class="col-xs-2"></div>
+		<div class="col-xs-5">
 		</div>
-		<div class="form-group">
-			<label for="gst">Phone No:</label>
-			<input type="text" class="form-control" [(ngModel)]="salesGstNew.phone_no" placeholder="Enter Phone NO" name="phone_no" required>
-		</div>
-		 <button class="btn btn-success" type="submit" (click)="saveDealersCustomersDetails('Customers');">Add New Company</button>
-		 <button class="btn btn-danger" type="cancel" (click)="showAddCustomersDiv='false'">Cancel</button>
-	</div>
-
-	<div class="conatiner" *ngIf="showAddCustomersDiv==='false'">
-		<div class="form-group">
-			<label for="invoiceno">Invoice No:</label>
-			<input type="text" class="form-control" [(ngModel)]="salesGstInvoiceno" placeholder="Enter Invoice No" name="invoiceno" required>
-		</div>
-		<div class="form-group">
-			<label for="date">Invoice Date:</label>
-	  	<input type="date" class="form-control" style="width:280px;" [(ngModel)]="salesGstDate" placeholder="Enter Date" name="date" required>
-		</div>
-		<div class="form-group">
-			<label for="percent">Percentage:</label>
-			<select class="form-control" name="percent" [(ngModel)]="salesGstPercent" required>
-				<option selected disabled>percent</option>
-				<option value="12">12</option>
-				<option value="18">18</option>
-			</select>
-		</div>
-		<div class="form-group">
-			<label for="amt">Amount:</label>
-			<input type="text" class="form-control" [(ngModel)]="salesGstAmt" placeholder="Enter Amount" name="amt" required>
-		</div>
-		<button type="submit" class="btn btn-info" (click)="saveDetails('sales')">Submit</button>
 	</div>
 </div>

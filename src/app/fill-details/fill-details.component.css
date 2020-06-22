@@ -1,7 +1,15 @@
+.fluid-container{
+	margin: 20px;
+}
+
 .container{
 	margin: 20px;
 }
 
 button{
+	margin:10px;
+}
+
+#radio{
 	margin:10px;
 }

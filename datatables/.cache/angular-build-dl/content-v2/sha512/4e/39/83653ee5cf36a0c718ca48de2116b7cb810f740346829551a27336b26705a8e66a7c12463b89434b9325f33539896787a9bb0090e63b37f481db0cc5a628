@@ -1,0 +1,1297 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"], {
+        /***/ "./$$_lazy_route_resource lazy recursive": 
+        /*!******************************************************!*\
+          !*** ./$$_lazy_route_resource lazy namespace object ***!
+          \******************************************************/
+        /*! no static exports found */
+        /***/ (function (module, exports) {
+            function webpackEmptyAsyncContext(req) {
+                // Here Promise.resolve().then() is used instead of new Promise() to prevent
+                // uncaught exception popping up in devtools
+                return Promise.resolve().then(function () {
+                    var e = new Error("Cannot find module '" + req + "'");
+                    e.code = 'MODULE_NOT_FOUND';
+                    throw e;
+                });
+            }
+            webpackEmptyAsyncContext.keys = function () { return []; };
+            webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+            module.exports = webpackEmptyAsyncContext;
+            webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html": 
+        /*!**************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
+          \**************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<h1>AKHILA AGENCIES</h1>\n<div class=\"form-group\">\n\t<button class=\"btn btn-danger\">New Data</button>\n</div>\n<div class=\"container\">\n  <div class=\"row\">\n      <a routerLink=\"fill-details\" routerLinkActive=\"active\"><button class=\"btn btn-success btn-lg\">Fill Details</button></a>\n  </div>\n  <!-- <div class=\"row\">\n    <a routerLink=\"view-update-delete\" routerLinkActive=\"active\"><button class=\"btn btn-warning btn-lg\">View & Update/Delete</button></a>\n  </div>-->\n  <div class=\"row\">\n    <a routerLink=\"Excel\" routerLinkActive=\"active\"><button class=\"btn btn-info btn-lg\">Excel Sheets</button></a>\n  </div>\n</div>\n<app-form-fill></app-form-fill>\n<router-outlet></router-outlet>\n");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/excel-sheets/excel-sheets.component.html": 
+        /*!************************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/excel-sheets/excel-sheets.component.html ***!
+          \************************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<h1>Download Excel sheets</h1>\r\n\r\n<button class=\"btn btn-success\" (click)=\"download('PURCHASE','18')\">Purchase 18%</button>\r\n<button class=\"btn btn-success\" (click)=\"download('PURCHASE','12')\">Purchase 12%</button>\r\n\r\n<button class=\"btn btn-info\" (click)=\"download('SALE GST 1','18')\">Sale GST 1 18%</button>\r\n<button class=\"btn btn-info\" (click)=\"download('SALE GST 1','12')\">Sale GST 1 12%</button>\r\n\r\n<button class=\"btn btn-warning\" (click)=\"download('SALE GST 3','18')\">Sale GST 3 18%</button>\r\n<button class=\"btn btn-warning\" (click)=\"download('SALE GST 3','12')\">Sale GST 3 12%</button>\r\n");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/fill-details/fill-details.component.html": 
+        /*!************************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/fill-details/fill-details.component.html ***!
+          \************************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"fluid-container\">\r\n\t<h1>Fill Details</h1>\r\n\t<div class=\"container form-group\">\r\n\t\t<label>Select:</label>\r\n\t\t<select class=\"form-control\" [(ngModel)]=\"selectType\">\r\n\t\t\t\t<option selected disabled>Select the Type</option>\r\n\t\t\t\t<option value=\"p\">Purchase</option>\r\n\t\t\t\t<option value=\"s\">Sales</option>\r\n\t\t\t\t<option value=\"sg\">Sale GST</option>\r\n\t\t</select>\r\n\t</div>\r\n\r\n\t<!-- Purchase Section -->\r\n\t<div class=\"container purchase\" *ngIf=\"selectType==='p'\">\r\n\t\t<h1>Purchase</h1>\r\n\t\t<div class=\"form-group\">\r\n\t\t\t<label for=\"Company\">Company:</label>\r\n\t \t\t<select class=\"selectpicker form-control\" data-show-subtext=\"true\" data-live-search=\"true\" [(ngModel)]=\"purchase.company\" name=\"company\">\r\n\t \t\t\t<option *ngFor=\"let dealer of dealers\" value=\"{{dealer}}\">{{dealer}}</option>\r\n\t\t\t</select>\r\n\t\t\t<button class=\"btn btn-link\" (click)=\"showAddDealerDiv='true'\">Add New Company</button>\r\n\t\t</div>\r\n\r\n\t\t<!-- Hidden Div element  -->\r\n\t\t\t<div class=\"container\" *ngIf=\"showAddDealerDiv==='true'\">\r\n\t\t\t\t<div class=\"form-group\">\r\n\t\t\t\t\t<label for=\"name\">Company:</label>\r\n\t\t\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"purchaseNew.company\" placeholder=\"Enter Name\" name=\"company\" required>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"form-group\">\r\n\t\t\t\t\t<label for=\"gst\">Gst No:</label>\r\n\t\t\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"purchaseNew.gstNo\" placeholder=\"Enter GST NO\" name=\"gst_no\" required>\r\n\t\t\t\t</div>\r\n\t\t\t\t<button class=\"btn btn-success\" type=\"submit\" (click)=\"saveDealersCustomersDetails('Dealers');\">Add New Company</button>\r\n\t\t\t\t<button class=\"btn btn-danger\" type=\"cancel\" (click)=\"showAddDealerDiv='false'\">Cancel</button>\r\n\t\t\t</div>\r\n\r\n\t\t<div *ngIf=\"showAddDealerDiv==='false'\">\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t <label for=\"date\">Date:</label>\r\n\t\t\t\t <input type=\"date\" class=\"form-control\" style=\"width:280px;\" name=\"date\" placeholder=\"Enter Date\" [(ngModel)]=\"purchase.date\" required>\r\n\t\t\t </div>\r\n\t\t\t <div class=\"form-group\">\r\n\t\t\t\t <label for=\"invoiceno\">Invoice No:</label>\r\n\t\t\t\t <input type=\"text\" class=\"form-control\"  [(ngModel)]=\"purchase.invoiceNo\" placeholder=\"Enter Invoice No\" name=\"invoiceno\"  required>\r\n\t\t\t </div>\r\n\t\t\t <div class=\"form-group\">\r\n\t\t\t\t <label for=\"amt\">Amount 12%:</label>\r\n\t\t\t\t <input type=\"text\" class=\"form-control\" [(ngModel)]=\"purchase.amount12\" placeholder=\"Enter Amount\" name=\"amt\" required>\r\n\t\t\t </div>\r\n\t\t\t <div class=\"form-group\">\r\n\t\t\t\t<label for=\"amt\">Amount 18%:</label>\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"purchase.amount18\" placeholder=\"Enter Amount\" name=\"amt\" required>\r\n\t\t\t</div>\r\n\r\n\t\t\t <button type=\"submit\" class=\"btn btn-info\" (click)=\"saveDetails('Purchase')\">Submit</button>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t<!--Sales Section  -->\r\n\t<div class=\"container sales\" *ngIf=\"selectType==='s'\">\r\n\t\t<h1>Sales</h1>\r\n\t\t<div class=\"form-group\">\r\n\t\t\t<label for=\"Date\">Date:</label>\r\n\t \t\t<input type=\"date\" class=\"form-control\" style=\"width:280px;\" [(ngModel)]=\"salesDate\" placeholder=\"Enter Date\" name=\"date\" required>\r\n\t\t</div>\r\n\t\t<div class=\"form-group\">\r\n\t\t\t<label for=\"amt\">Amount For 12%:</label>\r\n\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"salesAmt12\" name=\"amt12\" placeholder=\"Enter Amount of 12%\" value='0' required>\r\n\t\t</div>\r\n\t\t<div class=\"form-group\">\r\n\t\t\t<label for=\"amt\">Amount For 18%:</label>\r\n\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"salesAmt18\" name=\"amt18\" placeholder=\"Enter Amount of 18%\" value='0'  required>\r\n\t\t</div>\r\n\t\t<button type=\"submit\" class=\"btn btn-info\" (click)=\"saveDetails('Sales')\">Submit</button>\r\n\t</div>\r\n\r\n\t<!-- Sales GST Section -->\r\n\t<div class=\"container sales_gst\" *ngIf=\"selectType==='sg'\">\r\n\t\t<h1>Sales GST</h1>\r\n\t\t<div class=\"form-group\">\r\n\t\t\t<label for=\"Customer\">Customer:</label>\r\n\t \t\t<select class=\"selectpicker form-control\" data-show-subtext=\"true\" data-live-search=\"true\" [(ngModel)]=\"salesGstCustomer\" name=\"Customer\">\r\n\t \t\t\t<option *ngFor=\"let customer of customers\" value=\"{{customer}}\">{{customer}}</option>\r\n\t\t\t</select>\r\n\t\t\t<button class=\"btn btn-link\" (click)=\"showAddCustomersDiv='true'\">Add New Customer</button>\r\n\t\t</div>\r\n\r\n\t\t<!-- Hidden Div for customers -->\r\n\t\t<div class=\"container\" *ngIf=\"showAddCustomersDiv==='true'\">\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"name\">Customer:</label>\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"salesGstNew.customer\" placeholder=\"Enter Name\" name=\"name\" required>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"gst\">Gst No:</label>\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"salesGstNew.gst_no\" placeholder=\"Enter GST NO\" name=\"gst_no\" required>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"gst\">Phone No:</label>\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"salesGstNew.phone_no\" placeholder=\"Enter Phone NO\" name=\"phone_no\" required>\r\n\t\t\t</div>\r\n\t\t\t <button class=\"btn btn-success\" type=\"submit\" (click)=\"saveDealersCustomersDetails('Customers');\">Add New Company</button>\r\n\t\t\t <button class=\"btn btn-danger\" type=\"cancel\" (click)=\"showAddCustomersDiv='false'\">Cancel</button>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"conatiner\" *ngIf=\"showAddCustomersDiv==='false'\">\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"invoiceno\">Invoice No:</label>\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"salesGstInvoiceno\" placeholder=\"Enter Invoice No\" name=\"invoiceno\" required>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"date\">Invoice Date:</label>\r\n\t\t  \t<input type=\"date\" class=\"form-control\" style=\"width:280px;\" [(ngModel)]=\"salesGstDate\" placeholder=\"Enter Date\" name=\"date\" required>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"amt\">Amount12:</label>\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"salesGstAmt12\" placeholder=\"Enter Amount 12%\" name=\"amt\" required>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"form-group\">\r\n\t\t\t\t<label for=\"amt\">Amount18:</label>\r\n\t\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"salesGstAmt18\" placeholder=\"Enter Amount 18%\" name=\"amt\" required>\r\n\t\t\t</div>\r\n\t\t\t<button type=\"submit\" class=\"btn btn-info\" (click)=\"saveDetails('sales')\">Submit</button>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/form-fill/form-fill.component.html": 
+        /*!******************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/form-fill/form-fill.component.html ***!
+          \******************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<!-- <div class=\"container\">\n\t<div class=\"row\">\n\t\t<div class=\"col-sm-6\">\n\t\t\t<app-fill-details></app-fill-details> -->\n\t\t<!-- </div> -->\n\t\t<!-- <div class=\"col-sm-6\">\n\t\t\t<div class=\"container\">\n\t\t\t\t<table class=\"table table-striped\" *ngIf=\"loaded==='true'\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t<th>Invoice No</th>\n\t\t\t\t\t\t\t<th>Invoice Date</th>\n\t\t\t\t\t\t\t<th>Name</th>\n\t\t\t\t\t\t\t<th>percentage</th>\n\t\t\t\t\t\t\t<th>Amount</th>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr let x of purchase>\n\t\t\t\t\t\t\t<td>{{x.InvoiceNo}}</td>\n\t\t\t\t\t\t\t<td>{{x.InvoiceDate}}</td>\n\t\t\t\t\t\t\t<td>{{x.Name}}</td>\n\t\t\t\t\t\t\t<td>{{x.percentage}}</td>\n\t\t\t\t\t\t\t<td>{{x.Value}}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t</div> -->\n\t<!-- </div>\n</div> -->\n");
+            /***/ 
+        }),
+        /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/view-update-delete/view-update-delete.component.html": 
+        /*!************************************************************************************************************!*\
+          !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/view-update-delete/view-update-delete.component.html ***!
+          \************************************************************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("<!-- <h1>View - Update - Delete Details</h1>\n\n<div class=\"container\">\n\t<div class=\"form-group\" >\n\t\t<label for=\"sale_purchase\">Select:</label><br>\n\t\t<input type=\"radio\" class=\"type\" name=\"slectType\" value='purchase' [(ngModel)]=\"viewFiled\"> PURCHASE\n\t\t<input type=\"radio\" class=\"type\" name=\"slectType\" value=\"sales\" [(ngModel)]=\"viewFiled\"> SALE\n\t\t<input type=\"radio\" class=\"type\" name=\"slectType\" value=\"salesGst\" [(ngModel)]=\"viewFiled\"> SALE(GST)\n\t</div>\n\n\t<div class=\"container\" *ngIf=\"viewFiled==='purchase' || viewFiled==='salesGst'\">\n\t\t<div class=\"form-group\">\n\t\t\t<label for=\"date\">Date:</label>\n\t\t\t<input type=\"date\" class=\"form-control\" [(ngModel)]=\"searchDate\" placeholder=\"Enter Date\" name=\"date\">\n\t\t</div>\n\t\t<div class=\"form-group\">\n\t\t\t<label for=\"invoiceno\">Invoice No:</label>\n\t\t\t<input type=\"text\" class=\"form-control\" [(ngModel)]=\"searchInvoiceNo\" placeholder=\"Enter Invoice No\" name=\"invoiceno\">\n\t\t</div>\n\t\t<button class=\"btn btn-info\" (click)=\"getData()\" >Search</button>\n\t</div>\n\n\t<div class=\"container\" *ngIf=\"viewFiled==='sales'\">\n\t\t<div class=\"form-group\">\n\t\t\t<label for=\"date\">Date:</label>\n\t\t\t<input type=\"date\" class=\"form-control\" [(ngModel)]=\"searchDate\" placeholder=\"Enter Date\">\n\t\t</div>\n\t\t<button class=\"btn btn-info\" (click)=\"getData()\">Search</button>\n\t</div>\n</div>\n\n<div class=\"container\" *ngIf=\"showTable==='Yes'\">\n  <table class=\"table table-bordered table-responsive-md table-striped text-center\">\n  <thead>\n  <tr>\n\t\t<th scope=\"col\">No</th>\n    <th scope=\"col\" *ngIf=\"viewFiled==='purchase'\">Company</th>\n\t\t<th scope=\"col\" *ngIf=\"viewFiled==='salesGst'\">Customer</th>\n    <th scope=\"col\">Date</th>\n    <th scope=\"col\" *ngIf=\"viewFiled==='purchase' || viewFiled==='salesGst'\">Invoice No</th>\n\t\t<th scope=\"col\" *ngIf=\"viewFiled==='purchase' || viewFiled==='salesGst'\"><i class=\"fa fa-edit\"> </i>percentage</th>\n\t\t<th scope=\"col\" *ngIf=\"viewFiled==='purchase' || viewFiled==='salesGst'\"><i class=\"fa fa-edit\"> </i>Amount</th>\n\t\t<th scope=\"col\" *ngIf=\"viewFiled==='sales'\"><i class=\"fa fa-edit\"> </i>Amount 12</th>\n\t\t<th scope=\"col\" *ngIf=\"viewFiled==='sales'\"><i class=\"fa fa-edit\"> </i>Amount 18</th>\n  </tr>\n  </thead>\n  <tbody>\n  <tr *ngFor=\"let record of tableData let i = index\" [attr.data-index]=\"i\" >\n\t\t<td><i class=\"fa fa-close\" style=\"color:red\" (click)=\"deleteData(i)\"> </i>{{i+1}}</td>\n    <td *ngIf=\"viewFiled==='purchase'\">{{record.company}}</td>\n\t\t<td *ngIf=\"viewFiled==='salesGst'\">{{record.name}}</td>\n    <td>{{record.date}}</td>\n    <td *ngIf=\"viewFiled==='purchase' || viewFiled==='salesGst'\">{{record.invoiceNo}}</td>\n\t\t<td *ngIf=\"viewFiled==='purchase' || viewFiled==='salesGst'\"><span #el3 contenteditable (blur)=\"tableData[i].percentage=el3.innerText\">{{record.percentage}}</span></td>\n\t\t<td *ngIf=\"viewFiled==='purchase' || viewFiled==='salesGst'\"><span #el4 contenteditable (blur)=\"tableData[i].amount=el4.innerText\">{{record.amount}}</span></td>\n\t\t<td *ngIf=\"viewFiled==='sales'\"><span #el5 contenteditable (blur)=\"tableData[i].salesAmt12=el5.innerText\">{{record.salesAmt12}}</span></td>\n\t\t<td *ngIf=\"viewFiled==='sales'\"><span #el6 contenteditable (blur)=\"tableData[i].salesAmt18=el6.innerText\">{{record.salesAmt18}}</span></td>\n  </tr>\n  </tbody>\n</table>\n<button class=\"btn btn-warning\" (click)=\"updateData()\">Update</button>\n</div> -->\n<h1>Blocked for a month!</h1>\n");
+            /***/ 
+        }),
+        /***/ "./node_modules/tslib/tslib.es6.js": 
+        /*!*****************************************!*\
+          !*** ./node_modules/tslib/tslib.es6.js ***!
+          \*****************************************/
+        /*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function () { return __extends; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function () { return __assign; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function () { return __rest; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function () { return __decorate; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function () { return __param; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function () { return __metadata; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function () { return __awaiter; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function () { return __generator; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function () { return __exportStar; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function () { return __values; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function () { return __read; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function () { return __spread; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function () { return __spreadArrays; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function () { return __await; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function () { return __asyncGenerator; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function () { return __asyncDelegator; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function () { return __asyncValues; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function () { return __makeTemplateObject; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function () { return __importStar; });
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function () { return __importDefault; });
+            /*! *****************************************************************************
+            Copyright (c) Microsoft Corporation. All rights reserved.
+            Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+            this file except in compliance with the License. You may obtain a copy of the
+            License at http://www.apache.org/licenses/LICENSE-2.0
+            
+            THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+            KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+            WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+            MERCHANTABLITY OR NON-INFRINGEMENT.
+            
+            See the Apache Version 2.0 License for specific language governing permissions
+            and limitations under the License.
+            ***************************************************************************** */
+            /* global Reflect, Promise */
+            var extendStatics = function (d, b) {
+                extendStatics = Object.setPrototypeOf ||
+                    ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+                    function (d, b) { for (var p in b)
+                        if (b.hasOwnProperty(p))
+                            d[p] = b[p]; };
+                return extendStatics(d, b);
+            };
+            function __extends(d, b) {
+                extendStatics(d, b);
+                function __() { this.constructor = d; }
+                d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+            }
+            var __assign = function () {
+                __assign = Object.assign || function __assign(t) {
+                    for (var s, i = 1, n = arguments.length; i < n; i++) {
+                        s = arguments[i];
+                        for (var p in s)
+                            if (Object.prototype.hasOwnProperty.call(s, p))
+                                t[p] = s[p];
+                    }
+                    return t;
+                };
+                return __assign.apply(this, arguments);
+            };
+            function __rest(s, e) {
+                var t = {};
+                for (var p in s)
+                    if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+                        t[p] = s[p];
+                if (s != null && typeof Object.getOwnPropertySymbols === "function")
+                    for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+                        if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                            t[p[i]] = s[p[i]];
+                    }
+                return t;
+            }
+            function __decorate(decorators, target, key, desc) {
+                var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+                if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
+                    r = Reflect.decorate(decorators, target, key, desc);
+                else
+                    for (var i = decorators.length - 1; i >= 0; i--)
+                        if (d = decorators[i])
+                            r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+                return c > 3 && r && Object.defineProperty(target, key, r), r;
+            }
+            function __param(paramIndex, decorator) {
+                return function (target, key) { decorator(target, key, paramIndex); };
+            }
+            function __metadata(metadataKey, metadataValue) {
+                if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
+                    return Reflect.metadata(metadataKey, metadataValue);
+            }
+            function __awaiter(thisArg, _arguments, P, generator) {
+                return new (P || (P = Promise))(function (resolve, reject) {
+                    function fulfilled(value) { try {
+                        step(generator.next(value));
+                    }
+                    catch (e) {
+                        reject(e);
+                    } }
+                    function rejected(value) { try {
+                        step(generator["throw"](value));
+                    }
+                    catch (e) {
+                        reject(e);
+                    } }
+                    function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+                    step((generator = generator.apply(thisArg, _arguments || [])).next());
+                });
+            }
+            function __generator(thisArg, body) {
+                var _ = { label: 0, sent: function () { if (t[0] & 1)
+                        throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+                return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function () { return this; }), g;
+                function verb(n) { return function (v) { return step([n, v]); }; }
+                function step(op) {
+                    if (f)
+                        throw new TypeError("Generator is already executing.");
+                    while (_)
+                        try {
+                            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done)
+                                return t;
+                            if (y = 0, t)
+                                op = [op[0] & 2, t.value];
+                            switch (op[0]) {
+                                case 0:
+                                case 1:
+                                    t = op;
+                                    break;
+                                case 4:
+                                    _.label++;
+                                    return { value: op[1], done: false };
+                                case 5:
+                                    _.label++;
+                                    y = op[1];
+                                    op = [0];
+                                    continue;
+                                case 7:
+                                    op = _.ops.pop();
+                                    _.trys.pop();
+                                    continue;
+                                default:
+                                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) {
+                                        _ = 0;
+                                        continue;
+                                    }
+                                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) {
+                                        _.label = op[1];
+                                        break;
+                                    }
+                                    if (op[0] === 6 && _.label < t[1]) {
+                                        _.label = t[1];
+                                        t = op;
+                                        break;
+                                    }
+                                    if (t && _.label < t[2]) {
+                                        _.label = t[2];
+                                        _.ops.push(op);
+                                        break;
+                                    }
+                                    if (t[2])
+                                        _.ops.pop();
+                                    _.trys.pop();
+                                    continue;
+                            }
+                            op = body.call(thisArg, _);
+                        }
+                        catch (e) {
+                            op = [6, e];
+                            y = 0;
+                        }
+                        finally {
+                            f = t = 0;
+                        }
+                    if (op[0] & 5)
+                        throw op[1];
+                    return { value: op[0] ? op[1] : void 0, done: true };
+                }
+            }
+            function __exportStar(m, exports) {
+                for (var p in m)
+                    if (!exports.hasOwnProperty(p))
+                        exports[p] = m[p];
+            }
+            function __values(o) {
+                var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+                if (m)
+                    return m.call(o);
+                return {
+                    next: function () {
+                        if (o && i >= o.length)
+                            o = void 0;
+                        return { value: o && o[i++], done: !o };
+                    }
+                };
+            }
+            function __read(o, n) {
+                var m = typeof Symbol === "function" && o[Symbol.iterator];
+                if (!m)
+                    return o;
+                var i = m.call(o), r, ar = [], e;
+                try {
+                    while ((n === void 0 || n-- > 0) && !(r = i.next()).done)
+                        ar.push(r.value);
+                }
+                catch (error) {
+                    e = { error: error };
+                }
+                finally {
+                    try {
+                        if (r && !r.done && (m = i["return"]))
+                            m.call(i);
+                    }
+                    finally {
+                        if (e)
+                            throw e.error;
+                    }
+                }
+                return ar;
+            }
+            function __spread() {
+                for (var ar = [], i = 0; i < arguments.length; i++)
+                    ar = ar.concat(__read(arguments[i]));
+                return ar;
+            }
+            function __spreadArrays() {
+                for (var s = 0, i = 0, il = arguments.length; i < il; i++)
+                    s += arguments[i].length;
+                for (var r = Array(s), k = 0, i = 0; i < il; i++)
+                    for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+                        r[k] = a[j];
+                return r;
+            }
+            ;
+            function __await(v) {
+                return this instanceof __await ? (this.v = v, this) : new __await(v);
+            }
+            function __asyncGenerator(thisArg, _arguments, generator) {
+                if (!Symbol.asyncIterator)
+                    throw new TypeError("Symbol.asyncIterator is not defined.");
+                var g = generator.apply(thisArg, _arguments || []), i, q = [];
+                return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+                function verb(n) { if (g[n])
+                    i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+                function resume(n, v) { try {
+                    step(g[n](v));
+                }
+                catch (e) {
+                    settle(q[0][3], e);
+                } }
+                function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+                function fulfill(value) { resume("next", value); }
+                function reject(value) { resume("throw", value); }
+                function settle(f, v) { if (f(v), q.shift(), q.length)
+                    resume(q[0][0], q[0][1]); }
+            }
+            function __asyncDelegator(o) {
+                var i, p;
+                return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+                function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+            }
+            function __asyncValues(o) {
+                if (!Symbol.asyncIterator)
+                    throw new TypeError("Symbol.asyncIterator is not defined.");
+                var m = o[Symbol.asyncIterator], i;
+                return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+                function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+                function settle(resolve, reject, d, v) { Promise.resolve(v).then(function (v) { resolve({ value: v, done: d }); }, reject); }
+            }
+            function __makeTemplateObject(cooked, raw) {
+                if (Object.defineProperty) {
+                    Object.defineProperty(cooked, "raw", { value: raw });
+                }
+                else {
+                    cooked.raw = raw;
+                }
+                return cooked;
+            }
+            ;
+            function __importStar(mod) {
+                if (mod && mod.__esModule)
+                    return mod;
+                var result = {};
+                if (mod != null)
+                    for (var k in mod)
+                        if (Object.hasOwnProperty.call(mod, k))
+                            result[k] = mod[k];
+                result.default = mod;
+                return result;
+            }
+            function __importDefault(mod) {
+                return (mod && mod.__esModule) ? mod : { default: mod };
+            }
+            /***/ 
+        }),
+        /***/ "./src/app/app-routing.module.ts": 
+        /*!***************************************!*\
+          !*** ./src/app/app-routing.module.ts ***!
+          \***************************************/
+        /*! exports provided: AppRoutingModule */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function () { return AppRoutingModule; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+            /* harmony import */ var _fill_details_fill_details_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fill-details/fill-details.component */ "./src/app/fill-details/fill-details.component.ts");
+            /* harmony import */ var _excel_sheets_excel_sheets_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./excel-sheets/excel-sheets.component */ "./src/app/excel-sheets/excel-sheets.component.ts");
+            /* harmony import */ var _view_update_delete_view_update_delete_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./view-update-delete/view-update-delete.component */ "./src/app/view-update-delete/view-update-delete.component.ts");
+            var routes = [
+                { path: 'fill-details', component: _fill_details_fill_details_component__WEBPACK_IMPORTED_MODULE_3__["FillDetailsComponent"] },
+                { path: 'view-update-delete', component: _view_update_delete_view_update_delete_component__WEBPACK_IMPORTED_MODULE_5__["ViewUpdateDeleteComponent"] },
+                { path: 'Excel', component: _excel_sheets_excel_sheets_component__WEBPACK_IMPORTED_MODULE_4__["ExcelSheetsComponent"] }
+            ];
+            var AppRoutingModule = /** @class */ (function () {
+                function AppRoutingModule() {
+                }
+                return AppRoutingModule;
+            }());
+            AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+                    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+                    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+                })
+            ], AppRoutingModule);
+            /***/ 
+        }),
+        /***/ "./src/app/app.component.css": 
+        /*!***********************************!*\
+          !*** ./src/app/app.component.css ***!
+          \***********************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("body, html {\r\n  height: 100%;\r\n}\r\n\r\nh1 {\r\n  font-weight: 150;\r\n  font-family: 'Ultra', sans-serif;\r\n  font-size: 50px;\r\n  text-shadow: 0 2px white, 0 3px #777;\r\n  text-align: center;\r\n}\r\n\r\n.container {\r\n  margin-top: 20px;\r\n  text-align: center;\r\n}\r\n\r\n.row {\r\n  display: inline-block;\r\n  padding: 25px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsZ0NBQWdDO0VBQ2hDLGVBQWU7RUFDZixvQ0FBb0M7RUFDcEMsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixhQUFhO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJvZHksIGh0bWwge1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG5cclxuaDEge1xyXG4gIGZvbnQtd2VpZ2h0OiAxNTA7XHJcbiAgZm9udC1mYW1pbHk6ICdVbHRyYScsIHNhbnMtc2VyaWY7XHJcbiAgZm9udC1zaXplOiA1MHB4O1xyXG4gIHRleHQtc2hhZG93OiAwIDJweCB3aGl0ZSwgMCAzcHggIzc3NztcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5jb250YWluZXIge1xyXG4gIG1hcmdpbi10b3A6IDIwcHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4ucm93IHtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgcGFkZGluZzogMjVweDtcclxufVxyXG4iXX0= */");
+            /***/ 
+        }),
+        /***/ "./src/app/app.component.ts": 
+        /*!**********************************!*\
+          !*** ./src/app/app.component.ts ***!
+          \**********************************/
+        /*! exports provided: AppComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function () { return AppComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _firebase_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @firebase/app */ "./node_modules/@firebase/app/dist/index.cjs.js");
+            /* harmony import */ var _firebase_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/ __webpack_require__.n(_firebase_app__WEBPACK_IMPORTED_MODULE_2__);
+            /* harmony import */ var _firebase_database__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @firebase/database */ "./node_modules/@firebase/database/dist/index.cjs.js");
+            /* harmony import */ var _firebase_database__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/ __webpack_require__.n(_firebase_database__WEBPACK_IMPORTED_MODULE_3__);
+            /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+            var AppComponent = /** @class */ (function () {
+                function AppComponent() {
+                    this.title = 'dadProject';
+                    _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].firebasex);
+                }
+                return AppComponent;
+            }());
+            AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-root',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html")).default,
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")).default]
+                })
+            ], AppComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/app.module.ts": 
+        /*!*******************************!*\
+          !*** ./src/app/app.module.ts ***!
+          \*******************************/
+        /*! exports provided: AppModule */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function () { return AppModule; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var angularfire2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! angularfire2 */ "./node_modules/angularfire2/index.js");
+            /* harmony import */ var angularfire2__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/ __webpack_require__.n(angularfire2__WEBPACK_IMPORTED_MODULE_3__);
+            /* harmony import */ var angularfire2_database__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! angularfire2/database */ "./node_modules/angularfire2/database/index.js");
+            /* harmony import */ var angularfire2_database__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/ __webpack_require__.n(angularfire2_database__WEBPACK_IMPORTED_MODULE_4__);
+            /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+            /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+            /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+            /* harmony import */ var _fill_details_fill_details_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./fill-details/fill-details.component */ "./src/app/fill-details/fill-details.component.ts");
+            /* harmony import */ var _view_update_delete_view_update_delete_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./view-update-delete/view-update-delete.component */ "./src/app/view-update-delete/view-update-delete.component.ts");
+            /* harmony import */ var _excel_sheets_excel_sheets_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./excel-sheets/excel-sheets.component */ "./src/app/excel-sheets/excel-sheets.component.ts");
+            /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+            /* harmony import */ var _data_provider_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./data-provider.service */ "./src/app/data-provider.service.ts");
+            /* harmony import */ var _form_fill_form_fill_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./form-fill/form-fill.component */ "./src/app/form-fill/form-fill.component.ts");
+            var AppModule = /** @class */ (function () {
+                function AppModule() {
+                }
+                return AppModule;
+            }());
+            AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+                    declarations: [
+                        _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+                        _fill_details_fill_details_component__WEBPACK_IMPORTED_MODULE_8__["FillDetailsComponent"],
+                        _view_update_delete_view_update_delete_component__WEBPACK_IMPORTED_MODULE_9__["ViewUpdateDeleteComponent"],
+                        _excel_sheets_excel_sheets_component__WEBPACK_IMPORTED_MODULE_10__["ExcelSheetsComponent"],
+                        _form_fill_form_fill_component__WEBPACK_IMPORTED_MODULE_13__["FormFillComponent"]
+                    ],
+                    imports: [
+                        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_11__["FormsModule"],
+                        _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
+                        angularfire2__WEBPACK_IMPORTED_MODULE_3__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].firebasex),
+                        angularfire2_database__WEBPACK_IMPORTED_MODULE_4__["AngularFireDatabaseModule"],
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_11__["FormsModule"],
+                        _angular_forms__WEBPACK_IMPORTED_MODULE_11__["ReactiveFormsModule"]
+                    ],
+                    providers: [_data_provider_service__WEBPACK_IMPORTED_MODULE_12__["DataProviderService"]],
+                    bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+                })
+            ], AppModule);
+            /***/ 
+        }),
+        /***/ "./src/app/data-provider.service.ts": 
+        /*!******************************************!*\
+          !*** ./src/app/data-provider.service.ts ***!
+          \******************************************/
+        /*! exports provided: DataProviderService */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataProviderService", function () { return DataProviderService; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _firebase_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @firebase/app */ "./node_modules/@firebase/app/dist/index.cjs.js");
+            /* harmony import */ var _firebase_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/ __webpack_require__.n(_firebase_app__WEBPACK_IMPORTED_MODULE_2__);
+            /* harmony import */ var _firebase_database__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @firebase/database */ "./node_modules/@firebase/database/dist/index.cjs.js");
+            /* harmony import */ var _firebase_database__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/ __webpack_require__.n(_firebase_database__WEBPACK_IMPORTED_MODULE_3__);
+            var DataProviderService = /** @class */ (function () {
+                function DataProviderService() {
+                }
+                DataProviderService.prototype.getDealers = function () {
+                    var dealersData = [];
+                    var db = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref("dealers");
+                    db.on('child_added', function (snapshot) {
+                        dealersData.push(snapshot.key);
+                    });
+                    return dealersData;
+                };
+                DataProviderService.prototype.getCustomers = function () {
+                    var customersData = [];
+                    var db = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref("customers");
+                    db.on('child_added', function (snapshot) {
+                        customersData.push(snapshot.key);
+                    });
+                    return customersData;
+                };
+                DataProviderService.prototype.getExcelObject = function () {
+                    var Purchase18object = [];
+                    var Purchase12object = [];
+                    var saleGst318object = [];
+                    var saleGst312object = [];
+                    var saleGst118object = [];
+                    var saleGst112object = [];
+                    var saleSum12 = 0, saleSum18 = 0;
+                    var object = [];
+                    object[7] = 0;
+                    object[6] = 0;
+                    function getObj(obj, out) {
+                        for (var prop in obj) {
+                            if (obj.hasOwnProperty(prop)) {
+                                if (typeof obj[prop] == "object") {
+                                    getObj(obj[prop], out);
+                                }
+                                else {
+                                    out.push(obj);
+                                    return;
+                                }
+                            }
+                        }
+                        return;
+                    }
+                    //for purchase
+                    _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref('purchase').once('value').then(function (snapshot) {
+                        snapshot.forEach(function (childsnapshot) {
+                            var out = childsnapshot.val();
+                            var obj = [];
+                            getObj(out, obj);
+                            var _loop_1 = function (i) {
+                                if (obj[i].amount18 != 0 && !obj[i].completed) {
+                                    var j = 1.18;
+                                    var value_1 = (obj[i].amount18 / j);
+                                    var tax_1 = (obj[i].amount18 - value_1) / 2;
+                                    tax_1 = Math.floor(tax_1);
+                                    value_1 = Math.floor(value_1);
+                                    var gstIn_1 = "0";
+                                    var ref = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref('dealers/' + obj[i].company).once('value').then(function (snapshot) {
+                                        gstIn_1 = snapshot.val().gstNo;
+                                        Purchase18object.push({
+                                            'InvoiceDate': obj[i].date,
+                                            'Name': obj[i].company,
+                                            'GST/TIN': gstIn_1,
+                                            'InvoiceNo': obj[i].invoiceNo,
+                                            'Value': value_1,
+                                            'percentage': '18',
+                                            'State Tax': tax_1,
+                                            'Central Tax': tax_1,
+                                            'Amount': obj[i].amount18
+                                        });
+                                    });
+                                }
+                                if (obj[i].amount12 != 0 && !obj[i].completed) {
+                                    var j = 1.12;
+                                    var value_2 = (obj[i].amount12 / j);
+                                    var tax_2 = (obj[i].amount12 - value_2) / 2;
+                                    tax_2 = Math.floor(tax_2);
+                                    value_2 = Math.floor(value_2);
+                                    var gstIn_2 = "0";
+                                    var ref = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref('dealers/' + obj[i].company).once('value').then(function (snapshot) {
+                                        gstIn_2 = snapshot.val().gstNo;
+                                        Purchase12object.push({
+                                            'InvoiceDate': obj[i].date,
+                                            'Name': obj[i].company,
+                                            'GST/TIN': gstIn_2,
+                                            'InvoiceNo': obj[i].invoiceNo,
+                                            'Value': value_2,
+                                            'percentage': '12',
+                                            'State Tax': tax_2,
+                                            'Central Tax': tax_2,
+                                            'Amount': obj[i].amount12
+                                        });
+                                    });
+                                }
+                            };
+                            for (var i = 0; i < obj.length; i++) {
+                                _loop_1(i);
+                            }
+                        });
+                    });
+                    // sales gst 3%, 1%
+                    _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref('sales').orderByChild("date").once('value').then(function (snapshot) {
+                        snapshot.forEach(function (childsnapshot) {
+                            if (childsnapshot.val().invoiceNo && childsnapshot.val().amount12 && !childsnapshot.val().completed) {
+                                var j = 1.12;
+                                var value_3 = (childsnapshot.val().amount12 / j);
+                                var tax_3 = (childsnapshot.val().amount12 - value_3) / 2;
+                                tax_3 = Math.floor(tax_3);
+                                value_3 = Math.floor(value_3);
+                                var gstNo_1 = "0";
+                                var phoneNum_1 = "0";
+                                var ref = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref('customers/' + childsnapshot.val().name).once('value').then(function (snapshot) {
+                                    gstNo_1 = snapshot.val().gstNo;
+                                    phoneNum_1 = snapshot.val().phoneNo;
+                                    saleGst312object.push({
+                                        'InvoiceDate': childsnapshot.val().date,
+                                        'Name': childsnapshot.val().name,
+                                        'GST/TIN': gstNo_1,
+                                        'Phone Number': phoneNum_1,
+                                        'InvoiceNo': childsnapshot.val().invoiceNo,
+                                        'Value': value_3,
+                                        'percentage': "12",
+                                        'State Tax': tax_3,
+                                        'Central Tax': tax_3,
+                                        'Amount': childsnapshot.val().amount12
+                                    });
+                                    saleGst112object.push({
+                                        'InvoiceDate': childsnapshot.val().date,
+                                        'Name': childsnapshot.val().name,
+                                        'GST/TIN': gstNo_1,
+                                        'Phone Number': phoneNum_1,
+                                        'InvoiceNo': childsnapshot.val().invoiceNo,
+                                        'Value': value_3,
+                                        'percentage': "12",
+                                        'State Tax': tax_3,
+                                        'Central Tax': tax_3,
+                                        'Amount': childsnapshot.val().amount12
+                                    });
+                                });
+                            }
+                            if (childsnapshot.val().invoiceNo && childsnapshot.val().amount18 && !childsnapshot.val().completed) {
+                                var j = 1.18;
+                                var value_4 = (childsnapshot.val().amount18 / j);
+                                var tax_4 = (childsnapshot.val().amount18 - value_4) / 2;
+                                tax_4 = Math.floor(tax_4);
+                                value_4 = Math.floor(value_4);
+                                var gstNo_2 = "0";
+                                var phoneNum_2 = "0";
+                                var ref = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref('customers/' + childsnapshot.val().name).once('value').then(function (snapshot) {
+                                    gstNo_2 = snapshot.val().gstNo;
+                                    phoneNum_2 = snapshot.val().phoneNo;
+                                    saleGst318object.push({
+                                        'InvoiceDate': childsnapshot.val().date,
+                                        'Name': childsnapshot.val().name,
+                                        'GST/TIN': gstNo_2,
+                                        'Phone Number': phoneNum_2,
+                                        'Invoice No': childsnapshot.val().invoiceNo,
+                                        'Value': value_4,
+                                        'percentage': "18",
+                                        'State Tax': tax_4,
+                                        'Central Tax': tax_4,
+                                        'Amount': childsnapshot.val().amount18
+                                    });
+                                    saleGst118object.push({
+                                        'InvoiceDate': childsnapshot.val().date,
+                                        'Name': childsnapshot.val().name,
+                                        'GST/TIN': gstNo_2,
+                                        'Phone Number': phoneNum_2,
+                                        'Invoice No': childsnapshot.val().invoiceNo,
+                                        'Value': value_4,
+                                        'percentage': "18",
+                                        'State Tax': tax_4,
+                                        'Central Tax': tax_4,
+                                        'Amount': childsnapshot.val().amount18
+                                    });
+                                });
+                            }
+                            if (childsnapshot.val().salesAmt12 && childsnapshot.val().salesAmt12 != 0 && !childsnapshot.val().completed) {
+                                saleGst312object.push({
+                                    'InvoiceDate': childsnapshot.val().date,
+                                    'Name': "By Sale",
+                                    'GST/TIN': " ",
+                                    'Phone Number': " ",
+                                    'Invoice No': " ",
+                                    'Value': " ",
+                                    'percentage': "12",
+                                    'State Tax': " ",
+                                    'Central Tax': " ",
+                                    'Amount': childsnapshot.val().salesAmt12
+                                });
+                                saleSum12 += parseInt(childsnapshot.val().salesAmt12);
+                                object[6] = saleSum12;
+                            }
+                            if (childsnapshot.val().salesAmt18 && childsnapshot.val().salesAmt18 != 0 && !childsnapshot.val().completed) {
+                                saleGst318object.push({
+                                    'InvoiceDate': childsnapshot.val().date,
+                                    'Name': "By Sale",
+                                    'GST/TIN': " ",
+                                    'Phone Number': " ",
+                                    'Invoice No': " ",
+                                    'Value': " ",
+                                    'percentage': "18",
+                                    'State Tax': " ",
+                                    'Central Tax': " ",
+                                    'Amount': childsnapshot.val().salesAmt18
+                                });
+                                saleSum18 += parseInt(childsnapshot.val().salesAmt18);
+                                object[7] = saleSum18;
+                            }
+                        });
+                    });
+                    object[0] = Purchase12object;
+                    object[1] = Purchase18object;
+                    object[2] = saleGst312object;
+                    object[3] = saleGst318object;
+                    object[4] = saleGst112object;
+                    object[5] = saleGst118object;
+                    return object;
+                };
+                return DataProviderService;
+            }());
+            DataProviderService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+                    providedIn: 'root'
+                })
+            ], DataProviderService);
+            /***/ 
+        }),
+        /***/ "./src/app/excel-sheets/excel-sheets.component.css": 
+        /*!*********************************************************!*\
+          !*** ./src/app/excel-sheets/excel-sheets.component.css ***!
+          \*********************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("button{\r\n\tmargin:3vw;\r\n\tmargin-bottom: 0px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZXhjZWwtc2hlZXRzL2V4Y2VsLXNoZWV0cy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MsVUFBVTtDQUNWLGtCQUFrQjtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL2V4Y2VsLXNoZWV0cy9leGNlbC1zaGVldHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJ1dHRvbntcclxuXHRtYXJnaW46M3Z3O1xyXG5cdG1hcmdpbi1ib3R0b206IDBweDtcclxufVxyXG4iXX0= */");
+            /***/ 
+        }),
+        /***/ "./src/app/excel-sheets/excel-sheets.component.ts": 
+        /*!********************************************************!*\
+          !*** ./src/app/excel-sheets/excel-sheets.component.ts ***!
+          \********************************************************/
+        /*! exports provided: ExcelSheetsComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExcelSheetsComponent", function () { return ExcelSheetsComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _firebase_database__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @firebase/database */ "./node_modules/@firebase/database/dist/index.cjs.js");
+            /* harmony import */ var _firebase_database__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/ __webpack_require__.n(_firebase_database__WEBPACK_IMPORTED_MODULE_2__);
+            /* harmony import */ var _data_provider_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../data-provider.service */ "./src/app/data-provider.service.ts");
+            var ExcelSheetsComponent = /** @class */ (function () {
+                function ExcelSheetsComponent(dataProviderService) {
+                    this.excelData = [];
+                    this.excelData = dataProviderService.getExcelObject();
+                    console.log(this.excelData);
+                }
+                ExcelSheetsComponent.prototype.ngOnInit = function () { };
+                ExcelSheetsComponent.prototype.ConvertToCSV = function (objArray, sum) {
+                    var array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
+                    var str = '';
+                    var row = "S.No,";
+                    var total = 0;
+                    for (var index in objArray[0]) {
+                        row += index + ',';
+                    }
+                    row = row.slice(0, -1);
+                    str += row + '\r\n';
+                    var i = 0;
+                    var line = '';
+                    for (i = 0; i < array.length; i++) {
+                        line += (i + 1);
+                        for (var index in array[i]) {
+                            if (index == 'Amount')
+                                total += parseInt(array[i][index]);
+                            array[i][index] = '="' + array[i][index] + '"';
+                            if (line != '')
+                                line += ',';
+                            line += array[i][index];
+                        }
+                        str += line + '\r\n';
+                        line = '';
+                    }
+                    if (sum != -1 && sum != -2) {
+                        total += parseInt(sum);
+                        str += (i + 1) + ', ,BY SALE, , , , , , , ,' + sum;
+                        str += '\r\n';
+                    }
+                    if (sum == -1) {
+                        str += '\r\n';
+                        str += ', , , , , , ,TOTAL, ,' + total;
+                        str += '\r\n';
+                    }
+                    else {
+                        str += '\r\n';
+                        str += ', , , , , , , ,TOTAL, ,' + total;
+                        str += '\r\n';
+                    }
+                    return str;
+                };
+                ExcelSheetsComponent.prototype.download = function (type, percent) {
+                    var csvData;
+                    if (type == 'PURCHASE' && percent == '12') {
+                        this.excelData[0].sort(function (a, b) { return a.InvoiceDate.localeCompare(b.InvoiceDate); });
+                        csvData = this.ConvertToCSV(this.excelData[0], -1);
+                    }
+                    else if (type == 'PURCHASE' && percent == '18') {
+                        this.excelData[1].sort(function (a, b) { return a.InvoiceDate.localeCompare(b.InvoiceDate); });
+                        csvData = this.ConvertToCSV(this.excelData[1], -1);
+                    }
+                    else if (type == 'SALE GST 3' && percent == '12') {
+                        this.excelData[2].sort(function (a, b) { return a.InvoiceDate.localeCompare(b.InvoiceDate); });
+                        csvData = this.ConvertToCSV(this.excelData[2], -2);
+                    }
+                    else if (type == 'SALE GST 3' && percent == '18') {
+                        this.excelData[3].sort(function (a, b) { return a.InvoiceDate.localeCompare(b.InvoiceDate); });
+                        csvData = this.ConvertToCSV(this.excelData[3], -2);
+                    }
+                    else if (type == 'SALE GST 1' && percent == '12') {
+                        this.excelData[4].sort(function (a, b) { return a.InvoiceDate.localeCompare(b.InvoiceDate); });
+                        csvData = this.ConvertToCSV(this.excelData[4], this.excelData[6]);
+                    }
+                    else if (type == 'SALE GST 1' && percent == '18') {
+                        this.excelData[5].sort(function (a, b) { return a.InvoiceDate.localeCompare(b.InvoiceDate); });
+                        csvData = this.ConvertToCSV(this.excelData[5], this.excelData[7]);
+                    }
+                    var a = document.createElement("a");
+                    a.setAttribute('style', 'display:none;');
+                    document.body.appendChild(a);
+                    var blob = new Blob([csvData], {
+                        type: 'text/csv'
+                    });
+                    var url = window.URL.createObjectURL(blob);
+                    a.href = url;
+                    a.download = type + ' ' + percent + '%.csv';
+                    a.click();
+                };
+                return ExcelSheetsComponent;
+            }());
+            ExcelSheetsComponent.ctorParameters = function () { return [
+                { type: _data_provider_service__WEBPACK_IMPORTED_MODULE_3__["DataProviderService"] }
+            ]; };
+            ExcelSheetsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-excel-sheets',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./excel-sheets.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/excel-sheets/excel-sheets.component.html")).default,
+                    providers: [_data_provider_service__WEBPACK_IMPORTED_MODULE_3__["DataProviderService"]],
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./excel-sheets.component.css */ "./src/app/excel-sheets/excel-sheets.component.css")).default]
+                })
+            ], ExcelSheetsComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/fill-details/fill-details.component.css": 
+        /*!*********************************************************!*\
+          !*** ./src/app/fill-details/fill-details.component.css ***!
+          \*********************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = (".fluid-container{\r\n\tmargin: 20px;\r\n\twidth:30%;\r\n}\r\n\r\n.container{\r\n\tmargin: 20px;\r\n}\r\n\r\nbutton{\r\n\tmargin:10px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZmlsbC1kZXRhaWxzL2ZpbGwtZGV0YWlscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MsWUFBWTtDQUNaLFNBQVM7QUFDVjs7QUFFQTtDQUNDLFlBQVk7QUFDYjs7QUFFQTtDQUNDLFdBQVc7QUFDWiIsImZpbGUiOiJzcmMvYXBwL2ZpbGwtZGV0YWlscy9maWxsLWRldGFpbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mbHVpZC1jb250YWluZXJ7XHJcblx0bWFyZ2luOiAyMHB4O1xyXG5cdHdpZHRoOjMwJTtcclxufVxyXG5cclxuLmNvbnRhaW5lcntcclxuXHRtYXJnaW46IDIwcHg7XHJcbn1cclxuXHJcbmJ1dHRvbntcclxuXHRtYXJnaW46MTBweDtcclxufVxyXG4iXX0= */");
+            /***/ 
+        }),
+        /***/ "./src/app/fill-details/fill-details.component.ts": 
+        /*!********************************************************!*\
+          !*** ./src/app/fill-details/fill-details.component.ts ***!
+          \********************************************************/
+        /*! exports provided: FillDetailsComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FillDetailsComponent", function () { return FillDetailsComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _firebase_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @firebase/app */ "./node_modules/@firebase/app/dist/index.cjs.js");
+            /* harmony import */ var _firebase_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/ __webpack_require__.n(_firebase_app__WEBPACK_IMPORTED_MODULE_2__);
+            /* harmony import */ var _data_provider_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../data-provider.service */ "./src/app/data-provider.service.ts");
+            var FillDetailsComponent = /** @class */ (function () {
+                function FillDetailsComponent(dataProviderService) {
+                    this.dealers = [];
+                    this.customers = [];
+                    this.purchaseNewInt = {
+                        "company": "",
+                        "gstNo": ""
+                    };
+                    this.purchaseNew = {
+                        "company": "",
+                        "gstNo": ""
+                    };
+                    this.purchaseInt = {
+                        "company": "",
+                        "date": "",
+                        "amount12": "",
+                        "amount18": "",
+                        "invoiceNo": ""
+                    };
+                    this.purchase = {
+                        "company": "",
+                        "date": "",
+                        "amount12": "",
+                        "amount18": "",
+                        "invoiceNo": ""
+                    };
+                    this.salesGstNew = {
+                        "customer": "",
+                        "gst_no": "",
+                        "phone_no": ""
+                    };
+                    this.dealers = dataProviderService.getDealers();
+                    this.customers = dataProviderService.getCustomers();
+                }
+                FillDetailsComponent.prototype.ngOnInit = function () {
+                    this.showAddDealerDiv = "false";
+                    this.showAddCustomersDiv = "false";
+                };
+                FillDetailsComponent.prototype.saveDealersCustomersDetails = function (text) {
+                    if (text == 'Dealers') {
+                        _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref("dealers/" + this.purchaseNew.company).set({
+                            gstNo: this.purchaseNew.gstNo
+                        }, function (error) {
+                            if (error) {
+                                alert("Data could not be Inserted." + error);
+                            }
+                            else {
+                                alert("Data Inserted successfully.");
+                            }
+                        });
+                        this.showAddDealerDiv = "false";
+                        this.purchaseNew = JSON.parse(JSON.stringify(this.purchaseNewInt));
+                    }
+                    else {
+                        _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref("customers/" + this.salesGstNew.customer).set({
+                            gstNo: this.salesGstNew.gst_no,
+                            phoneNo: this.salesGstNew.phone_no
+                        }, function (error) {
+                            if (error) {
+                                alert("Data could not be Inserted." + error);
+                            }
+                            else {
+                                alert("Data Inserted successfully.");
+                            }
+                        });
+                        this.showAddCustomersDiv = "false";
+                        this.salesGstNew.customer = "";
+                        this.salesGstNew.gst_no = "";
+                        this.salesGstNew.phone_no = "";
+                    }
+                };
+                FillDetailsComponent.prototype.saveDetails = function (text) {
+                    if (text == 'Purchase') {
+                        _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref("purchase/" + this.purchase.invoiceNo + '-' + this.purchase.date).set({
+                            company: this.purchase.company,
+                            date: this.purchase.date,
+                            amount12: eval(this.purchase.amount12),
+                            amount18: eval(this.purchase.amount18),
+                            invoiceNo: this.purchase.invoiceNo
+                        }, function (error) {
+                            if (error) {
+                                alert("Data could not be Inserted." + error);
+                            }
+                            else {
+                                alert("Data Inserted successfully.");
+                            }
+                        });
+                        // this.selectType="done";
+                        this.purchase = JSON.parse(JSON.stringify(this.purchaseInt));
+                    }
+                    else if (text == 'Sales') {
+                        _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref("sales/" + this.salesDate).set({
+                            date: this.salesDate,
+                            salesAmt12: eval(this.salesAmt12) > 0 ? eval(this.salesAmt12) : 0,
+                            salesAmt18: eval(this.salesAmt18) > 0 ? eval(this.salesAmt18) : 0
+                        }, function (error) {
+                            if (error) {
+                                alert("Data could not be Inserted." + error);
+                            }
+                            else {
+                                alert("Data Inserted successfully.");
+                            }
+                        });
+                        // this.selectType="done";
+                        this.salesDate = "";
+                        this.salesAmt12 = "";
+                        this.salesAmt18 = "";
+                    }
+                    else {
+                        _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref("sales/" + this.salesGstInvoiceno + '-' + this.salesGstDate).set({
+                            name: this.salesGstCustomer,
+                            invoiceNo: this.salesGstInvoiceno,
+                            date: this.salesGstDate,
+                            amount12: eval(this.salesGstAmt12) > 0 ? eval(this.salesGstAmt12) : 0,
+                            amount18: eval(this.salesGstAmt18) > 0 ? eval(this.salesGstAmt18) : 0
+                        }, function (error) {
+                            if (error) {
+                                alert("Data could not be Inserted." + error);
+                            }
+                            else {
+                                alert("Data Inserted successfully.");
+                            }
+                        });
+                        // this.selectType="done";
+                        this.salesGstCustomer = "";
+                        this.salesGstInvoiceno = "";
+                        this.salesGstDate = "";
+                        this.salesGstAmt12 = "";
+                        this.salesGstAmt18 = "";
+                    }
+                };
+                return FillDetailsComponent;
+            }());
+            FillDetailsComponent.ctorParameters = function () { return [
+                { type: _data_provider_service__WEBPACK_IMPORTED_MODULE_3__["DataProviderService"] }
+            ]; };
+            FillDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-fill-details',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./fill-details.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/fill-details/fill-details.component.html")).default,
+                    providers: [_data_provider_service__WEBPACK_IMPORTED_MODULE_3__["DataProviderService"]],
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./fill-details.component.css */ "./src/app/fill-details/fill-details.component.css")).default]
+                })
+            ], FillDetailsComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/form-fill/form-fill.component.css": 
+        /*!***************************************************!*\
+          !*** ./src/app/form-fill/form-fill.component.css ***!
+          \***************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = (".col-sm-6{\r\n\tborder: 2px solid;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9ybS1maWxsL2Zvcm0tZmlsbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL2Zvcm0tZmlsbC9mb3JtLWZpbGwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb2wtc20tNntcclxuXHRib3JkZXI6IDJweCBzb2xpZDtcclxuXHRtYXJnaW4tYm90dG9tOiAxMHB4O1xyXG59XHJcbiJdfQ== */");
+            /***/ 
+        }),
+        /***/ "./src/app/form-fill/form-fill.component.ts": 
+        /*!**************************************************!*\
+          !*** ./src/app/form-fill/form-fill.component.ts ***!
+          \**************************************************/
+        /*! exports provided: FormFillComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormFillComponent", function () { return FormFillComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _data_provider_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data-provider.service */ "./src/app/data-provider.service.ts");
+            var FormFillComponent = /** @class */ (function () {
+                function FormFillComponent(dataProviderService) {
+                    this.excelData = [];
+                    this.purchase = [];
+                    this.loaded = 'false';
+                    this.excelData = dataProviderService.getExcelObject();
+                    this.purchase = this.excelData[0];
+                    console.log(this.purchase);
+                    this.loaded = 'true';
+                }
+                return FormFillComponent;
+            }());
+            FormFillComponent.ctorParameters = function () { return [
+                { type: _data_provider_service__WEBPACK_IMPORTED_MODULE_2__["DataProviderService"] }
+            ]; };
+            FormFillComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-form-fill',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./form-fill.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/form-fill/form-fill.component.html")).default,
+                    providers: [_data_provider_service__WEBPACK_IMPORTED_MODULE_2__["DataProviderService"]],
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./form-fill.component.css */ "./src/app/form-fill/form-fill.component.css")).default]
+                })
+            ], FormFillComponent);
+            /***/ 
+        }),
+        /***/ "./src/app/view-update-delete/view-update-delete.component.css": 
+        /*!*********************************************************************!*\
+          !*** ./src/app/view-update-delete/view-update-delete.component.css ***!
+          \*********************************************************************/
+        /*! exports provided: default */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony default export */ __webpack_exports__["default"] = ("button{\r\n\tmargin-top: 10px;\r\n\tmargin-right: 10px;\r\n\tmargin-bottom: 10px;\r\n}\r\n\r\n.container{\r\n\tmargin-top:20px;\r\n}\r\n\r\n.type{\r\n\tmargin-left: 30px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlldy11cGRhdGUtZGVsZXRlL3ZpZXctdXBkYXRlLWRlbGV0ZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MsZ0JBQWdCO0NBQ2hCLGtCQUFrQjtDQUNsQixtQkFBbUI7QUFDcEI7O0FBRUE7Q0FDQyxlQUFlO0FBQ2hCOztBQUVBO0NBQ0MsaUJBQWlCO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvdmlldy11cGRhdGUtZGVsZXRlL3ZpZXctdXBkYXRlLWRlbGV0ZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYnV0dG9ue1xyXG5cdG1hcmdpbi10b3A6IDEwcHg7XHJcblx0bWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG5cdG1hcmdpbi1ib3R0b206IDEwcHg7XHJcbn1cclxuXHJcbi5jb250YWluZXJ7XHJcblx0bWFyZ2luLXRvcDoyMHB4O1xyXG59XHJcblxyXG4udHlwZXtcclxuXHRtYXJnaW4tbGVmdDogMzBweDtcclxufVxyXG4iXX0= */");
+            /***/ 
+        }),
+        /***/ "./src/app/view-update-delete/view-update-delete.component.ts": 
+        /*!********************************************************************!*\
+          !*** ./src/app/view-update-delete/view-update-delete.component.ts ***!
+          \********************************************************************/
+        /*! exports provided: ViewUpdateDeleteComponent */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewUpdateDeleteComponent", function () { return ViewUpdateDeleteComponent; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _firebase_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @firebase/app */ "./node_modules/@firebase/app/dist/index.cjs.js");
+            /* harmony import */ var _firebase_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/ __webpack_require__.n(_firebase_app__WEBPACK_IMPORTED_MODULE_2__);
+            /* harmony import */ var _firebase_database__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @firebase/database */ "./node_modules/@firebase/database/dist/index.cjs.js");
+            /* harmony import */ var _firebase_database__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/ __webpack_require__.n(_firebase_database__WEBPACK_IMPORTED_MODULE_3__);
+            /* harmony import */ var _data_provider_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../data-provider.service */ "./src/app/data-provider.service.ts");
+            var ViewUpdateDeleteComponent = /** @class */ (function () {
+                function ViewUpdateDeleteComponent(data) {
+                    this.data = data;
+                }
+                ViewUpdateDeleteComponent.prototype.ngOnInit = function () {
+                };
+                ViewUpdateDeleteComponent.prototype.getData = function () {
+                    var td = [];
+                    if (this.viewFiled == 'purchase') {
+                        var ref = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref(this.viewFiled + '/' + this.searchInvoiceNo + '-' + this.searchDate).once('value').then(function (snapshot) {
+                            snapshot.val() != null ? td.push(snapshot.val()) : 1;
+                        });
+                    }
+                    else if (this.viewFiled == 'salesGst') {
+                        var ref = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref('sales' + '/' + this.searchInvoiceNo + '-' + this.searchDate).once('value').then(function (snapshot) {
+                            snapshot.val() != null ? td.push(snapshot.val()) : 1;
+                        });
+                    }
+                    else {
+                        var ref = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref('sales' + '/' + this.searchDate).once('value').then(function (snapshot) {
+                            snapshot.val() != null ? td.push(snapshot.val()) : 1;
+                        });
+                    }
+                    this.tableData = td;
+                    this.showTable = "Yes";
+                    this.searchDate = "";
+                    this.searchInvoiceNo = "";
+                };
+                ViewUpdateDeleteComponent.prototype.updateData = function () {
+                    var db = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref(this.viewFiled);
+                    for (var i = 0; i < this.tableData.length; i++) {
+                        var td = this.tableData[i];
+                        var ref = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref().child(this.viewFiled);
+                        if (this.viewFiled == 'purchase') {
+                            ref.child(td.invoiceNo + '-' + td.date).update({ 'company': td.company, 'percentage': td.percentage, 'amount': td.amount }, function (error) {
+                                if (error) {
+                                    alert("Data could not be Updated." + error);
+                                }
+                                else {
+                                    alert("Data Updated successfully.");
+                                }
+                            });
+                        }
+                        else if (this.viewFiled == 'salesGst') {
+                            ref.child(td.invoiceNo + '-' + td.date).update({ 'name': td.name, 'percentage': td.percentage, 'amount': td.amount }, function (error) {
+                                if (error) {
+                                    alert("Data could not be Updated." + error);
+                                }
+                                else {
+                                    alert("Data Updated successfully.");
+                                }
+                            });
+                        }
+                        else {
+                            ref.child(td.date).update({ 'salesAmt12': td.salesAmt12, 'salesAmt18': td.salesAmt18 }, function (error) {
+                                if (error) {
+                                    alert("Data could not be Updated." + error);
+                                }
+                                else {
+                                    alert("Data Updated successfully.");
+                                }
+                            });
+                        }
+                    }
+                    delete this.tableData;
+                    this.showTable = "No";
+                };
+                ViewUpdateDeleteComponent.prototype.deleteData = function (index) {
+                    var ref = _firebase_app__WEBPACK_IMPORTED_MODULE_2___default.a.database().ref().child(this.viewFiled);
+                    if (this.viewFiled == 'purchase') {
+                        ref.child(this.tableData[index].invoiceNo + '-' + this.tableData[index].date).remove(function (error) {
+                            if (error) {
+                                alert("Data could not be Deleted." + error);
+                            }
+                            else {
+                                alert("Data Deleted successfully.");
+                            }
+                        });
+                    }
+                    else if (this.viewFiled == 'salesGst') {
+                        ref.child(this.tableData[index].invoiceNo + '-' + this.tableData[index].date).remove(function (error) {
+                            if (error) {
+                                alert("Data could not be Deleted." + error);
+                            }
+                            else {
+                                alert("Data Deleted successfully.");
+                            }
+                        });
+                    }
+                    else {
+                        ref.child(this.tableData[index].date).remove(function (error) {
+                            if (error) {
+                                alert("Data could not be Deleted." + error);
+                            }
+                            else {
+                                alert("Data Deleted successfully.");
+                            }
+                        });
+                    }
+                    delete this.tableData;
+                    this.showTable = "No";
+                };
+                return ViewUpdateDeleteComponent;
+            }());
+            ViewUpdateDeleteComponent.ctorParameters = function () { return [
+                { type: _data_provider_service__WEBPACK_IMPORTED_MODULE_4__["DataProviderService"] }
+            ]; };
+            ViewUpdateDeleteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+                    selector: 'app-view-update-delete',
+                    template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./view-update-delete.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/view-update-delete/view-update-delete.component.html")).default,
+                    providers: [_data_provider_service__WEBPACK_IMPORTED_MODULE_4__["DataProviderService"]],
+                    styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./view-update-delete.component.css */ "./src/app/view-update-delete/view-update-delete.component.css")).default]
+                })
+            ], ViewUpdateDeleteComponent);
+            /***/ 
+        }),
+        /***/ "./src/environments/environment.ts": 
+        /*!*****************************************!*\
+          !*** ./src/environments/environment.ts ***!
+          \*****************************************/
+        /*! exports provided: environment */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function () { return environment; });
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            var environment = {
+                production: false,
+                firebasex: {
+                    apiKey: "AIzaSyDyY7mhCcOII5I3gO4r4R1v-vgr0ez4naw",
+                    authDomain: "dadproject-1ea10.firebaseapp.com",
+                    databaseURL: "https://dadproject-1ea10.firebaseio.com",
+                    projectId: "dadproject-1ea10",
+                    storageBucket: "dadproject-1ea10.appspot.com",
+                    messagingSenderId: "371800043381",
+                    appId: "1:371800043381:web:7cba2eabc46e8077a66d3c"
+                }
+            };
+            /***/ 
+        }),
+        /***/ "./src/main.ts": 
+        /*!*********************!*\
+          !*** ./src/main.ts ***!
+          \*********************/
+        /*! no exports provided */
+        /***/ (function (module, __webpack_exports__, __webpack_require__) {
+            "use strict";
+            __webpack_require__.r(__webpack_exports__);
+            /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+            /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+            /* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
+            /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+            /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+            if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
+                Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
+            }
+            Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
+                .catch(function (err) { return console.error(err); });
+            /***/ 
+        }),
+        /***/ 0: 
+        /*!***************************!*\
+          !*** multi ./src/main.ts ***!
+          \***************************/
+        /*! no static exports found */
+        /***/ (function (module, exports, __webpack_require__) {
+            module.exports = __webpack_require__(/*! C:\Users\sbhavya\Documents\Personal Projects\dadProject\src\main.ts */ "./src/main.ts");
+            /***/ 
+        })
+    }, [[0, "runtime", "vendor"]]]);
+//# sourceMappingURL=main-es2015.js.map
+//# sourceMappingURL=main-es5.js.map
+//# sourceMappingURL=main-es5.js.map

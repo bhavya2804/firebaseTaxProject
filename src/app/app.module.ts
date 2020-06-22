@@ -9,9 +9,9 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FillDetailsComponent } from './fill-details/fill-details.component';
-import { ViewUpdateDeleteComponent } from './view-update-delete/view-update-delete.component';
 import { ExcelSheetsComponent } from './excel-sheets/excel-sheets.component';
 import { ReactiveFormsModule, FormsModule, FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { AgGridModule } from 'ag-grid-angular';
 
 import { DataProviderService } from './data-provider.service';
 
@@ -19,7 +19,6 @@ import { DataProviderService } from './data-provider.service';
   declarations: [
     AppComponent,
     FillDetailsComponent,
-    ViewUpdateDeleteComponent,
     ExcelSheetsComponent
   ],
   imports: [
@@ -29,7 +28,8 @@ import { DataProviderService } from './data-provider.service';
     AngularFireModule.initializeApp(environment.firebasex),
     AngularFireDatabaseModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AgGridModule.withComponents([])
   ],
   providers: [DataProviderService],
   bootstrap: [AppComponent]

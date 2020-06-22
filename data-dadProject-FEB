@@ -1,0 +1,2477 @@
+{
+  "customers" : {
+    "ACA GLOBAL PVT LTD" : {
+      "gstNo" : "37AAOCA4607F1ZP",
+      "phoneNo" : ""
+    },
+    "ACTIS GENERICS (P) LTD" : {
+      "gstNo" : "37AAKCA5168N1Z1",
+      "phoneNo" : "0"
+    },
+    "AKTINOS PHARMA PRIVATE LIMITED" : {
+      "gstNo" : "37AAGCA6198J3Z3",
+      "phoneNo" : "9493864065"
+    },
+    "ANV LOGISTICS" : {
+      "gstNo" : "37ABQFA1753M1Z4",
+      "phoneNo" : ""
+    },
+    "AVRA LABORATORIES PVT LTD" : {
+      "gstNo" : "37AABCA7317G1ZU",
+      "phoneNo" : ""
+    },
+    "BALAJEE CONSTRUCTIONS" : {
+      "gstNo" : "37AAFFB8159G1Z9",
+      "phoneNo" : "9652822389"
+    },
+    "BEEKAY STEEL INDUSTRIES LIMITED" : {
+      "gstNo" : "37AABCB3205A1ZI",
+      "phoneNo" : "9182481057"
+    },
+    "BHADRA HCPV PIPES" : {
+      "gstNo" : "37BHUPB8996E1ZL",
+      "phoneNo" : "0"
+    },
+    "BYGGING INDIA LIMITED" : {
+      "gstNo" : "37AAACB0642E1Z8",
+      "phoneNo" : ""
+    },
+    "CHAITANYA PIPES N PIPES" : {
+      "gstNo" : "37AABFC4632K1ZH",
+      "phoneNo" : ""
+    },
+    "CHEPALA MASENU" : {
+      "gstNo" : "37AQDPC0237C1ZL",
+      "phoneNo" : ""
+    },
+    "DEVASRI AC SPARES" : {
+      "gstNo" : "37CTYPM6258F1ZV",
+      "phoneNo" : "7288807213"
+    },
+    "DEVI ENTERPRISES (ANIPEDDI GIRI BHANUSREE)" : {
+      "gstNo" : "37AEUPB8073N1ZP",
+      "phoneNo" : "0"
+    },
+    "DILLEP TRANSPORT" : {
+      "gstNo" : "37AAJFD4397C2ZA",
+      "phoneNo" : ""
+    },
+    "DURGA BALAJI PLASTIC INDUSTRIES" : {
+      "gstNo" : "37CMBPB2050G1ZN",
+      "phoneNo" : ""
+    },
+    "GANDI NARASINGA RAO" : {
+      "gstNo" : "37AIFPG1974Q2ZN",
+      "phoneNo" : "9985936084"
+    },
+    "GOPAL TEKNOCON (P) LTD" : {
+      "gstNo" : "37AAFCG5290G1ZG",
+      "phoneNo" : "7674858191"
+    },
+    "HAVELLS INDIA LIMITED VIJAYAWADA" : {
+      "gstNo" : "37AAACH0351EZ4",
+      "phoneNo" : "0"
+    },
+    "HI TECH EQUIPMENT & FABICATION" : {
+      "gstNo" : "37AFOPG2756G1Z9",
+      "phoneNo" : ""
+    },
+    "HI WOOD PLASTOTECH" : {
+      "gstNo" : "37AAGFH0739M1Z3",
+      "phoneNo" : "966870017"
+    },
+    "HINDUJA NATIONAL POWER CORPORATION LIMITED" : {
+      "gstNo" : "37AABCH2426D1Z1",
+      "phoneNo" : "9553881278"
+    },
+    "ISHAAN INFRA" : {
+      "gstNo" : "37CS4PS1131EIZF",
+      "phoneNo" : ""
+    },
+    "JAGAPATHI CONSTRUCTIONS" : {
+      "gstNo" : "37AAEFJ1996Q2ZH",
+      "phoneNo" : "9493290829"
+    },
+    "JAI BHARATH ENTERPRISES" : {
+      "gstNo" : "37CFAPD7010L1ZO",
+      "phoneNo" : ""
+    },
+    "JAYA DEEP INFRASTRUCTURES " : {
+      "gstNo" : "37ANLPB9512C2Z7",
+      "phoneNo" : ""
+    },
+    "JKR INFRATECH" : {
+      "gstNo" : "37AALFJ9167A1Z5",
+      "phoneNo" : "7989992678"
+    },
+    "K AKKUNAIDU (KUNDRAPU)" : {
+      "gstNo" : "37ACEPA9678C1ZK",
+      "phoneNo" : "9989846699"
+    },
+    "KRISHNA SABBI" : {
+      "gstNo" : "37BQCPS5742J1ZE",
+      "phoneNo" : "0"
+    },
+    "LAKSHMI SAI FLEXI FILMS" : {
+      "gstNo" : "37ADDPV3954C1ZF",
+      "phoneNo" : "0"
+    },
+    "LALITHA CONSTRUCTIONS (DOMMETI SATYANARAYANA)" : {
+      "gstNo" : "37BEQPS3337P1ZI",
+      "phoneNo" : "0"
+    },
+    "LALITHA POWER SOLUTIONS" : {
+      "gstNo" : "37BXPPG4273G1Z6",
+      "phoneNo" : ""
+    },
+    "LAURUS LABS" : {
+      "gstNo" : "37AABCL1170C1Z0",
+      "phoneNo" : ""
+    },
+    "LEAK AND SEAL" : {
+      "gstNo" : "37AIHPN6001DIZM",
+      "phoneNo" : "7032122464"
+    },
+    "M" : {
+      "S PHALANX LABS PRIVATE LIMITED" : {
+        "gstNo" : "37AAFCP9117K1Z0",
+        "phoneNo" : ""
+      }
+    },
+    "M S R CONSTRUCTIONS" : {
+      "gstNo" : "37BPEPS5929CIZO",
+      "phoneNo" : ""
+    },
+    "MAHA LAXMI ENTERPRISES" : {
+      "gstNo" : "37ABCFIM2605G7ZK",
+      "phoneNo" : "9866166083"
+    },
+    "MAHI DRUGS PRIVATE LIMITED" : {
+      "gstNo" : "37AAICM3271E1ZI",
+      "phoneNo" : "7997997205"
+    },
+    "MAHIDHARA CHEMICALS PRIVATE LIMITED" : {
+      "gstNo" : "36AABCM3630N1ZD",
+      "phoneNo" : "9000695696"
+    },
+    "MAHIMA TRADERS" : {
+      "gstNo" : "37AYJPM8097Q1Z6",
+      "phoneNo" : ""
+    },
+    "MANOHAR CIVIL STRUCTURES (MANOHAR PRASAD SETTI)" : {
+      "gstNo" : "37EJNPS7588K1ZW",
+      "phoneNo" : "8555009553"
+    },
+    "METROCHEM API PRIVATE LIMITED" : {
+      "gstNo" : "37AADCM2691M1Z0",
+      "phoneNo" : "8187890272"
+    },
+    "MONISHA ERECTORS" : {
+      "gstNo" : "37AAVFM9963D1ZI",
+      "phoneNo" : "9701541999"
+    },
+    "MONOHAR CIWL STURCLRES" : {
+      "gstNo" : "37CJNPS7588KIZW",
+      "phoneNo" : ""
+    },
+    "MS PYDIMAMBA AGENCIES PROP K N RAO" : {
+      "gstNo" : "37BENPK2197E1Z8",
+      "phoneNo" : "9505833096"
+    },
+    "MURALI REDDY TIPPANA" : {
+      "gstNo" : "37ADTPT5902A2ZC",
+      "phoneNo" : "0"
+    },
+    "NAGESH VARAHA VISWESWARA REDDI" : {
+      "gstNo" : "37AFVPR3823E3ZZ",
+      "phoneNo" : "9989878932"
+    },
+    "NAGESWARARAO LALAM" : {
+      "gstNo" : "37ADDPL9514G1ZH",
+      "phoneNo" : "9440940218"
+    },
+    "O BHASKERA RAO" : {
+      "gstNo" : "37CMHPB5133NIZW",
+      "phoneNo" : ""
+    },
+    "P Y NAIDU & CO" : {
+      "gstNo" : "37AAMFP0460H1Z6",
+      "phoneNo" : "0"
+    },
+    "PHALANX LABS PRIVATE LIMITED" : {
+      "gstNo" : "37AAFCP9117K1Z0",
+      "phoneNo" : ""
+    },
+    "PIONEER WELD AND WEAVES PRIVATE LIMITED" : {
+      "gstNo" : "37AADCP7247G1Z8",
+      "phoneNo" : "9391930033"
+    },
+    "PRABHAT ENGINEERING" : {
+      "gstNo" : "37AAEEP5795K1ZJ",
+      "phoneNo" : ""
+    },
+    "PYDIMAMBA AGENCIES" : {
+      "gstNo" : "37BENPK2197EIZ8",
+      "phoneNo" : ""
+    },
+    "PYLA CONSTRUCTIONS" : {
+      "gstNo" : "37AAGFP8603C1ZD",
+      "phoneNo" : "7780439414"
+    },
+    "RAKSHIT DRUGS PVT LTD" : {
+      "gstNo" : "37AABCR5942G2Z9",
+      "phoneNo" : ""
+    },
+    "RAKSHIT PHARMACEUTICALS LIMITED" : {
+      "gstNo" : "37AADCR1986L1ZT",
+      "phoneNo" : "0"
+    },
+    "RANAR AGRO CHEMICALS LTD" : {
+      "gstNo" : "37AACCP0372M1Z8",
+      "phoneNo" : ""
+    },
+    "RVV NAGESH" : {
+      "gstNo" : "37AFVPR3823E3ZZ",
+      "phoneNo" : ""
+    },
+    "S KRISHNA" : {
+      "gstNo" : "37BQCPS5742J1ZE",
+      "phoneNo" : ""
+    },
+    "S T A R PRO AQUA PARAVADA" : {
+      "gstNo" : "37AVCPV7476L1ZN",
+      "phoneNo" : ""
+    },
+    "SAI RAM CHEMICALS" : {
+      "gstNo" : "37ACEFS1922P1ZP",
+      "phoneNo" : "9493864065"
+    },
+    "SASHANK ENTERPRISES" : {
+      "gstNo" : "37AOKPC5159C1Z3",
+      "phoneNo" : "0"
+    },
+    "SATYA LAKSHMI ENGINEERING" : {
+      "gstNo" : "37ACRFS7166A1ZR",
+      "phoneNo" : ""
+    },
+    "SHIVINTH FIDRAPLAST" : {
+      "gstNo" : "36ACQPM0956P2ZR",
+      "phoneNo" : "9393939402"
+    },
+    "SIMHADHRI GREEN METNCAL" : {
+      "gstNo" : "37AGOPAI5I4B1Z1",
+      "phoneNo" : "9989061612"
+    },
+    "SOMA AGENCIES" : {
+      "gstNo" : "37AAGFS6608AIZD",
+      "phoneNo" : ""
+    },
+    "SOMUNAIDU YADURI" : {
+      "gstNo" : "37ACDPY0496K1ZY",
+      "phoneNo" : "9505054525"
+    },
+    "SPECTRA DIAGNOSTIC ENTERPRISES (ROSALINE KADAVUNKAL JOSEPH)" : {
+      "gstNo" : "37AGJPJ6969L1ZJ",
+      "phoneNo" : "9849504628"
+    },
+    "SREE SAIPATHA ELEETRICALS" : {
+      "gstNo" : "37AGWPK4323RIZA",
+      "phoneNo" : ""
+    },
+    "SRI ADITYA ENGINEERING WORKS" : {
+      "gstNo" : "37ABSFS1935P1Z8",
+      "phoneNo" : "9948463816"
+    },
+    "SRI BALAJI PLASTICS" : {
+      "gstNo" : "37A1JPY2232R2ZE",
+      "phoneNo" : "9396636696"
+    },
+    "SRI GANGHADHAR PLASTIC (P) LTD" : {
+      "gstNo" : "37AAWCS3285N1Z9",
+      "phoneNo" : ""
+    },
+    "SRI HANUMAN CONSTRUCTIONS" : {
+      "gstNo" : "37AFCPC1245B1ZB",
+      "phoneNo" : "9885379865"
+    },
+    "SRI KRISHNA CHEMICALS" : {
+      "gstNo" : "37ADPPA1144F1ZW",
+      "phoneNo" : ""
+    },
+    "SRI MOULI LAD GLASSWORKS" : {
+      "gstNo" : "37A1ZPN1631R2Z8",
+      "phoneNo" : "9703688855"
+    },
+    "SRI SAI CHANDANA API (P) LTD" : {
+      "gstNo" : "37AAVCS6989G1Z8",
+      "phoneNo" : "7337553207"
+    },
+    "SRI SAI ELECTRICALS" : {
+      "gstNo" : "37AIPPG5049N1ZM",
+      "phoneNo" : "9440858234"
+    },
+    "SRI SAI SAMPATH CONSTRUCTIONS (APPARAO PYLA)" : {
+      "gstNo" : "37BTDPP3051R1Z4",
+      "phoneNo" : "8500336337"
+    },
+    "SRI SAMPATH VINAYAKA LAND SCAPING AND CIVIL WORKS " : {
+      "gstNo" : "37ACRFS1026K1Z",
+      "phoneNo" : ""
+    },
+    "SRI SRINIVASA TRANSPORT" : {
+      "gstNo" : "37CFWPR8018C1ZX",
+      "phoneNo" : ""
+    },
+    "SRI VENKATESHWARA AGENCIES (RAMBABU KUNDRAPU)" : {
+      "gstNo" : "37DBTPK3990N1ZK",
+      "phoneNo" : "9951446865"
+    },
+    "SRI VENKATESHWARA ENTERPRISES" : {
+      "gstNo" : "37BZOPM2676L1ZJ",
+      "phoneNo" : "0"
+    },
+    "SRI VIJAYA DURGA ELECTRICALS" : {
+      "gstNo" : "37BJPPG2274P1ZI",
+      "phoneNo" : "9908255375"
+    },
+    "SRI VYJAYANTHI (P) LTD" : {
+      "gstNo" : "37AAACI4543F1ZR",
+      "phoneNo" : "9573711278"
+    },
+    "SRINIVASARAO BHEESETTI" : {
+      "gstNo" : " 37BBCPB1580L2ZP",
+      "phoneNo" : "9849005322"
+    },
+    "SRIYA ENGINEERING (VIJAYAMALLIKARJUNA REDDY ALLA)" : {
+      "gstNo" : "37ADJPA9336M2Z4",
+      "phoneNo" : "0"
+    },
+    "STAR PRO AQUA" : {
+      "gstNo" : "37AVCPV7476L1ZN",
+      "phoneNo" : ""
+    },
+    "STBL PROJECTS LIMITED" : {
+      "gstNo" : "37AALCS2261H1Z7",
+      "phoneNo" : "0"
+    },
+    "SUDHA ENTERPRISES" : {
+      "gstNo" : "37ABLFS8591G1ZG",
+      "phoneNo" : "0"
+    },
+    "SURAT AMMONIA AND CHEMICAL COMPANY PRIVATE LIMITED" : {
+      "gstNo" : "24AALCS4249M1ZV",
+      "phoneNo" : "0"
+    },
+    "SURIBABU KUNDRAPU" : {
+      "gstNo" : "37AOUPK6821R1ZV",
+      "phoneNo" : "0"
+    },
+    "SUVEN LIFE SCIENCES LTD" : {
+      "gstNo" : "37AADCS4044C1Z0",
+      "phoneNo" : ""
+    },
+    "SVDC REINFORCED PLASTICS" : {
+      "gstNo" : "37AHKPP1508P2ZS",
+      "phoneNo" : ""
+    },
+    "SVR DRUGS PVT LTD" : {
+      "gstNo" : "37AAOCS6986L1Z7",
+      "phoneNo" : ""
+    },
+    "T MURALI REDDY NTPC" : {
+      "gstNo" : "37ADTPT5902A2ZC",
+      "phoneNo" : "0"
+    },
+    "TEJKAMAL MODLDED FURNUTURE P LTD" : {
+      "gstNo" : "37AACCK6653N3ZX",
+      "phoneNo" : ""
+    },
+    "THE NTPC LL CHEPURAPALLI MALCCS LTD" : {
+      "gstNo" : "37AABAT4284H1Z9",
+      "phoneNo" : ""
+    },
+    "VALARY LAB (P)LTD" : {
+      "gstNo" : "37AAHCV1466H1Z3",
+      "phoneNo" : ""
+    },
+    "VALLI ELECTRICALS" : {
+      "gstNo" : "37ASMPK3198E2ZC",
+      "phoneNo" : ""
+    },
+    "VESTRO SOLVENTS PVT LTD" : {
+      "gstNo" : "37AABCV5324J1Z7",
+      "phoneNo" : "9346077661"
+    },
+    "VIJAY NIRMAN COMPANY PRIVATE LIMITED" : {
+      "gstNo" : "37AABCV6001E1ZQ",
+      "phoneNo" : "0"
+    },
+    "VIMAL DRUGS" : {
+      "gstNo" : "37AADCV0136A1ZW",
+      "phoneNo" : ""
+    },
+    "VISAKHA SOLVENTS LTD" : {
+      "gstNo" : "37AADCV0069J1Z5",
+      "phoneNo" : "0"
+    },
+    "VISHNU CHEMICALS (P) LTD" : {
+      "gstNo" : "37AACCV1903A3ZU",
+      "phoneNo" : ""
+    }
+  },
+  "dealers" : {
+    "ASHRITHA SAI ENTERPRISES" : {
+      "gstNo" : "37ABBFA0722H1ZX"
+    },
+    "BENTEC INDIA LTD" : {
+      "gstNo" : "36AABCB0647G1Z0"
+    },
+    "BEZAWADA PIPES & FITTINGS" : {
+      "gstNo" : "37CIKPB3444B1ZO"
+    },
+    "BHADRA HDPE PIPES" : {
+      "gstNo" : "37BHUPB8996E1ZL"
+    },
+    "BN ENTERPRISES" : {
+      "gstNo" : "37AKBPP8359EIZV"
+    },
+    "BOTHRA SALES CORORATION" : {
+      "gstNo" : "37AAOFB0500E1ZZ"
+    },
+    "CREATIVE AGENCIES" : {
+      "gstNo" : "37AAEFC6593L1ZW"
+    },
+    "CRI PUMPS (P) LTD" : {
+      "gstNo" : "37AAACC9497N1ZT"
+    },
+    "GODAVARI PLASTO CONTAINERS PVT LTD" : {
+      "gstNo" : "36AABCG3047K1ZM"
+    },
+    "GOLDMEDAL ELECTRICAL (P) LTD" : {
+      "gstNo" : "37AACCG9397F1Z5"
+    },
+    "GOWTAM AGENCIES" : {
+      "gstNo" : "37AULPC8679E1Z7"
+    },
+    "HAVELLS INDIA LTD" : {
+      "gstNo" : "37AAACH0351E1Z4"
+    },
+    "HINDUSTAN ENTRPRISES" : {
+      "gstNo" : "37AADFH3452J1ZC"
+    },
+    "HINDUSTAN PLASTICS" : {
+      "gstNo" : "37ABXPG3598D1Z4"
+    },
+    "INDHU PLAZA" : {
+      "gstNo" : "37AROPG4178J1Z9"
+    },
+    "J V M PLASTO PVT LTD" : {
+      "gstNo" : "36AACCJ2829D2ZS"
+    },
+    "JAIN ELECTRICALS" : {
+      "gstNo" : "37ACOPD8817G1ZC"
+    },
+    "KANTA ENTERPRISES" : {
+      "gstNo" : "37ABNPS0466N1ZW"
+    },
+    "LAL ELECTRICALS" : {
+      "gstNo" : "37AABFL3390B1ZM"
+    },
+    "LUCKY & SMILEY ENTERPRISES" : {
+      "gstNo" : "37DPNPK9250K1Z6"
+    },
+    "MAHA GOWRI MARKETING" : {
+      "gstNo" : "37AHGPNO232Q1Z2"
+    },
+    "MAHAVIR UDYOG" : {
+      "gstNo" : "37AAGFM8178D1Z0"
+    },
+    "MAHESWARI ENTERPRISES" : {
+      "gstNo" : "37ALAPS5685E1ZS"
+    },
+    "MANAK PLASTICS PVT LTD" : {
+      "gstNo" : "37AACCM4454B1ZR"
+    },
+    "MEGA STAR ELECTRICALS - 2018-19" : {
+      "gstNo" : "37AAMPJ9596N1ZJ"
+    },
+    "MILAN POLYMERS" : {
+      "gstNo" : "37ALPPJ4256M1ZG"
+    },
+    "MS SATGUR POLYMERS" : {
+      "gstNo" : "37ACYFS88843D1ZC"
+    },
+    "MULTISTAR ELECTRICALS" : {
+      "gstNo" : "37AABHK7464D1Z8"
+    },
+    "NATRAJ ELECTRICALS" : {
+      "gstNo" : "37AADFN4533A1ZP"
+    },
+    "NEEL GAGANELECTRICALS AND HARDWARE" : {
+      "gstNo" : "37AHLPC0434G1ZP"
+    },
+    "NOORI ENGINEERING COMPANY" : {
+      "gstNo" : "37AZTPS2941Q1Z7"
+    },
+    "OM SAI GURU DATTA AGENCIES" : {
+      "gstNo" : "37BLVPP1277K1Z8"
+    },
+    "PARAS ELECTRICALS" : {
+      "gstNo" : "37ACOPD7588G1Z2"
+    },
+    "PARAS LIGHTING DISTRIBUTORS" : {
+      "gstNo" : "37ABGPN2953E1ZN"
+    },
+    "POONAM COPPER PRODUCTS" : {
+      "gstNo" : "37CCZPS8637J1ZB"
+    },
+    "PRADHAN TUBE INDIA -(2018-19)" : {
+      "gstNo" : "37ADIPA1640D1Z6"
+    },
+    "PRISM JOHNSON LIMITED " : {
+      "gstNo" : "36AAACP6224A1ZY"
+    },
+    "RATHI SALES AGENCIES" : {
+      "gstNo" : "37AAPFR1400C1ZL"
+    },
+    "RATNA PLASTICS LIMITED" : {
+      "gstNo" : "37AABCR0424K1ZI"
+    },
+    "ROOPAK PLASTICS" : {
+      "gstNo" : "37AABCR7442M1ZY"
+    },
+    "SAI DURGA METALUX" : {
+      "gstNo" : "37ADDFS8166P1Z6"
+    },
+    "SANCHETI ELECTRICAL LINES" : {
+      "gstNo" : "37AGQPS4464C1Z0"
+    },
+    "SARADHI POWER SYSTEMS" : {
+      "gstNo" : "37ADUPM7206R2ZI"
+    },
+    "SGR ENTERPRISES" : {
+      "gstNo" : "37FRMPS4956R1ZC"
+    },
+    "SHARADHI POWER SYSTEMS" : {
+      "gstNo" : "37ADUPM7206R2ZI"
+    },
+    "SHIVA SHANKARA BORE CLAMPS" : {
+      "gstNo" : "37C1SPK7298C1ZL"
+    },
+    "SHREE BABA TRADING" : {
+      "gstNo" : "37ABOFS1935M1ZI"
+    },
+    "SOMA AGENCIES" : {
+      "gstNo" : "37AAGFS6608A1ZD"
+    },
+    "SOUTH INDIA PUMPS" : {
+      "gstNo" : "37CCZPS863731ZB"
+    },
+    "SR AGENCIES" : {
+      "gstNo" : "37AEDPV1921L1Z7"
+    },
+    "SREE GAYATRI ENTERPRISES" : {
+      "gstNo" : "37AJCPP5701A1ZO"
+    },
+    "SREE PAVAN TRADERS" : {
+      "gstNo" : "37ADHFS7630J1ZN"
+    },
+    "SREE RAMAKRISHNA ENTERPRISES" : {
+      "gstNo" : "37AHAPP8750H1Z2"
+    },
+    "SREE VIJAYA ELECTRICALS" : {
+      "gstNo" : "37AHAPP9804C1ZF"
+    },
+    "SREE VIJAYALAKSHMI MILL STORES" : {
+      "gstNo" : "37AANFS4921R1ZB"
+    },
+    "SRI BALAJI ELECTRICALS" : {
+      "gstNo" : "37AVBPV1727F1ZJ"
+    },
+    "SRI BALAJI MARKETING AGENCIES" : {
+      "gstNo" : "37AAMPI0326D1Z3"
+    },
+    "SRI GODAVARI PIPES" : {
+      "gstNo" : "37ALNPA2371G2Z7"
+    },
+    "SRI JAIN ELECTRICALS" : {
+      "gstNo" : "37AHIPS8670H1Z0"
+    },
+    "SRI JAIN TRADING CORPORATION" : {
+      "gstNo" : "37ANXPS5548P1ZK"
+    },
+    "SRI JAYA DURGA CERAMICS" : {
+      "gstNo" : "37AIJPG5216F1ZG"
+    },
+    "SRI KANDUKURI ENTERPRISES" : {
+      "gstNo" : "37AYZPS1372C1ZX"
+    },
+    "SRI LAKSHMI NARAYANA SANITARY WARE" : {
+      "gstNo" : "37AABFL3390B1ZM"
+    },
+    "SRI MAHALAKSHMI ENTRPRISES" : {
+      "gstNo" : "37AJQPM5668M1Z6"
+    },
+    "SRI MAHAVEER MARKETING" : {
+      "gstNo" : "37ALPPJ4277Q2Z2"
+    },
+    "SRI RAVI TADING CO" : {
+      "gstNo" : "37AAXPV5444Q1ZV"
+    },
+    "SRI SAI KRISHNA ENTERPRISES" : {
+      "gstNo" : "37ADEFS4672B1Z3"
+    },
+    "SRI UMAMAHESHWARA ENGG CO" : {
+      "gstNo" : "37AHFPG2211D1Z2"
+    },
+    "SRI VENKATA SAI ENTERPRISES" : {
+      "gstNo" : "37ADXPV7561P1Z1"
+    },
+    "SRI VIJAYA TRADING CO" : {
+      "gstNo" : "37ACJPP5496Q1ZF"
+    },
+    "SUDHAKAR MARKETING AGENCIES (P) LTD" : {
+      "gstNo" : "37AAECS3053J1Z9"
+    },
+    "TAKSHA INDUSTRIES" : {
+      "gstNo" : "37APNPG6152P1Z8"
+    },
+    "THAKSHA INDUSTRIES" : {
+      "gstNo" : "37APNPG6152P1Z8"
+    },
+    "VIJAYA LAKSHMI SHEET METAL WORKS" : {
+      "gstNo" : "37BYIPK6550N1ZS"
+    },
+    "VIJAYAWADA ELECTRICALS" : {
+      "gstNo" : "37ARNPS3584M1ZS"
+    },
+    "VIMAL CABLE COMPANY" : {
+      "gstNo" : "37BJAPB1739H1ZJ"
+    },
+    "VIMAL ELECTRICALS" : {
+      "gstNo" : "37ASLPS0191F1ZI"
+    },
+    "VINDHYA SRI ENTRPRISES" : {
+      "gstNo" : "37APZPK2873B1ZH"
+    },
+    "WATERTEC INDIA PVT LTD" : {
+      "gstNo" : "37AAACW1645G1ZE"
+    }
+  },
+  "purchase" : {
+    "27" : {
+      "AP" : {
+        "VM" : {
+          "A" : {
+            "2010" : {
+              "HR" : {
+                "W-2020-01-07" : {
+                  "amount12" : 0,
+                  "amount18" : 6563,
+                  "company" : "VINDHYA SRI ENTRPRISES",
+                  "completed" : 1,
+                  "date" : "2020-01-07",
+                  "invoiceNo" : "27/AP/VM/A/2010/HR/W"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "2529" : {
+      "19-20-2020-01-21" : {
+        "amount12" : 0,
+        "amount18" : 18408,
+        "company" : "BENTEC INDIA LTD",
+        "completed" : 1,
+        "date" : "2020-01-21",
+        "invoiceNo" : "2529/19-20"
+      }
+    },
+    "2706" : {
+      "2019-20-2020-02-21" : {
+        "amount12" : 0,
+        "amount18" : 72738,
+        "company" : "MAHAVIR UDYOG",
+        "date" : "2020-02-21",
+        "completed" : 1,
+        "invoiceNo" : "2706/2019-20"
+      }
+    },
+    "1109-2020-01-01" : {
+      "amount12" : 0,
+      "amount18" : 25276,
+      "company" : "SRI BALAJI ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-01-01",
+      "invoiceNo" : "1109"
+    },
+    "1185-2020-01-02" : {
+      "amount12" : 0,
+      "amount18" : 23600,
+      "company" : "ROOPAK PLASTICS",
+      "completed" : 1,
+      "date" : "2020-01-02",
+      "invoiceNo" : "1185"
+    },
+    "1185-2020-02-03" : {
+      "amount12" : 22384,
+      "amount18" : 5508,
+      "company" : "SRI BALAJI ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-03",
+      "invoiceNo" : "1185"
+    },
+    "1213-2020-02-08" : {
+      "amount12" : 0,
+      "amount18" : 29000,
+      "company" : "SRI BALAJI ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-08",
+      "invoiceNo" : "1213"
+    },
+    "1291-2020-02-17" : {
+      "amount12" : 0,
+      "amount18" : 23600,
+      "company" : "ROOPAK PLASTICS",
+      "completed" : 1,
+      "date" : "2020-02-17",
+      "invoiceNo" : "1291"
+    },
+    "1338-2020-02-25" : {
+      "amount12" : 0,
+      "amount18" : 19964,
+      "company" : "SRI BALAJI ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-25",
+      "invoiceNo" : "1338"
+    },
+    "1348-2020-02-28" : {
+      "amount12" : 0,
+      "amount18" : 18000,
+      "company" : "SRI BALAJI ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-28",
+      "invoiceNo" : "1348"
+    },
+    "1398-2020-03-10" : {
+      "amount" : 4831,
+      "company" : "SRI BALAJI ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-03-10",
+      "invoiceNo" : "1398",
+      "percentage" : "18"
+    },
+    "1479-2020-02-20" : {
+      "amount12" : 0,
+      "amount18" : 13116,
+      "company" : "SHREE BABA TRADING",
+      "completed" : 1,
+      "date" : "2020-02-20",
+      "invoiceNo" : "1479"
+    },
+    "1986016981-2020-01-30" : {
+      "amount12" : 0,
+      "amount18" : 49787,
+      "company" : "SUDHAKAR MARKETING AGENCIES (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-30",
+      "invoiceNo" : "1986016981"
+    },
+    "1986016982-2020-01-30" : {
+      "amount12" : 0,
+      "amount18" : 20894,
+      "company" : "SUDHAKAR MARKETING AGENCIES (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-30",
+      "invoiceNo" : "1986016982"
+    },
+    "1986017055-2020-01-29" : {
+      "amount12" : 0,
+      "amount18" : 127902,
+      "company" : "SUDHAKAR MARKETING AGENCIES (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-29",
+      "invoiceNo" : "1986017055"
+    },
+    "1986017056-2020-01-29" : {
+      "amount12" : 0,
+      "amount18" : 4684,
+      "company" : "SUDHAKAR MARKETING AGENCIES (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-29",
+      "invoiceNo" : "1986017056"
+    },
+    "1986017057-2020-01-29" : {
+      "amount12" : 0,
+      "amount18" : 181919,
+      "company" : "SUDHAKAR MARKETING AGENCIES (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-29",
+      "invoiceNo" : "1986017057"
+    },
+    "1986017058-2020-01-29" : {
+      "amount12" : 0,
+      "amount18" : 15168,
+      "company" : "SUDHAKAR MARKETING AGENCIES (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-29",
+      "invoiceNo" : "1986017058"
+    },
+    "1986017059-2020-01-29" : {
+      "amount12" : 0,
+      "amount18" : 13898,
+      "company" : "SUDHAKAR MARKETING AGENCIES (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-29",
+      "invoiceNo" : "1986017059"
+    },
+    "198601753-2020-01-29" : {
+      "amount12" : 0,
+      "amount18" : 304241,
+      "company" : "SUDHAKAR MARKETING AGENCIES (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-29",
+      "invoiceNo" : "198601753"
+    },
+    "203-2020-02-19" : {
+      "amount12" : 0,
+      "amount18" : 7670,
+      "company" : "SHIVA SHANKARA BORE CLAMPS",
+      "completed" : 1,
+      "date" : "2020-02-19",
+      "invoiceNo" : "203"
+    },
+    "207-2020-02-26" : {
+      "amount12" : 0,
+      "amount18" : 7552,
+      "company" : "SHIVA SHANKARA BORE CLAMPS",
+      "completed" : 1,
+      "date" : "2020-02-26",
+      "invoiceNo" : "207"
+    },
+    "2393-2020-01-11" : {
+      "amount12" : 0,
+      "amount18" : 28834,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-01-11",
+      "invoiceNo" : "2393"
+    },
+    "2394-2020-01-11" : {
+      "amount12" : 0,
+      "amount18" : 63551,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-01-11",
+      "invoiceNo" : "2394"
+    },
+    "2395-2020-01-11" : {
+      "amount12" : 0,
+      "amount18" : 95567,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-01-11",
+      "invoiceNo" : "2395"
+    },
+    "2396-2020-01-11" : {
+      "amount12" : 0,
+      "amount18" : 8261,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-01-11",
+      "invoiceNo" : "2396"
+    },
+    "2398-2020-01-11" : {
+      "amount12" : 0,
+      "amount18" : 2608,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-01-11",
+      "invoiceNo" : "2398"
+    },
+    "2560-2020-02-07" : {
+      "amount12" : 0,
+      "amount18" : 36003,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-07",
+      "invoiceNo" : "2560"
+    },
+    "2561-2020-02-07" : {
+      "amount12" : 0,
+      "amount18" : 96469,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-07",
+      "invoiceNo" : "2561"
+    },
+    "2562-2020-02-07" : {
+      "amount12" : 0,
+      "amount18" : 43728,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-07",
+      "invoiceNo" : "2562"
+    },
+    "2564-2020-02-07" : {
+      "amount12" : 0,
+      "amount18" : 26610,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-07",
+      "invoiceNo" : "2564"
+    },
+    "2565-2020-02-07" : {
+      "amount12" : 0,
+      "amount18" : 45878,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-07",
+      "invoiceNo" : "2565"
+    },
+    "2678-2020-02-20" : {
+      "amount12" : 0,
+      "amount18" : 27287,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-20",
+      "invoiceNo" : "2678"
+    },
+    "2679-2020-02-20" : {
+      "amount12" : 0,
+      "amount18" : 70304,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-20",
+      "invoiceNo" : "2679"
+    },
+    "2680-2020-02-20" : {
+      "amount12" : 0,
+      "amount18" : 13881,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-20",
+      "invoiceNo" : "2680"
+    },
+    "2683-2020-02-20" : {
+      "amount12" : 0,
+      "amount18" : 10048,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-20",
+      "invoiceNo" : "2683"
+    },
+    "2684-2020-02-20" : {
+      "amount12" : 1456,
+      "amount18" : 0,
+      "company" : "LAL ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-20",
+      "invoiceNo" : "2684"
+    },
+    "2700024098-2020-02-12" : {
+      "amount12" : 0,
+      "amount18" : 156436,
+      "company" : "WATERTEC INDIA PVT LTD",
+      "completed" : 1,
+      "date" : "2020-02-12",
+      "invoiceNo" : "2700024098"
+    },
+    "52-2020-02-11" : {
+      "amount12" : 0,
+      "amount18" : 210540,
+      "company" : "SGR ENTERPRISES",
+      "completed" : 1,
+      "date" : "2020-02-11",
+      "invoiceNo" : "52"
+    },
+    "5378-2020-01-11" : {
+      "amount12" : 0,
+      "amount18" : 104039,
+      "company" : "SRI RAVI TADING CO",
+      "completed" : 1,
+      "date" : "2020-01-11",
+      "invoiceNo" : "5378"
+    },
+    "5563092989-2020-01-01" : {
+      "amount12" : 0,
+      "amount18" : 73618,
+      "company" : "HAVELLS INDIA LTD",
+      "completed" : 1,
+      "date" : "2020-01-01",
+      "invoiceNo" : "5563092989"
+    },
+    "5563092996-2020-01-01" : {
+      "amount12" : 41111,
+      "amount18" : 0,
+      "company" : "HAVELLS INDIA LTD",
+      "completed" : 1,
+      "date" : "2020-01-01",
+      "invoiceNo" : "5563092996"
+    },
+    "5563092997-2020-01-01" : {
+      "amount12" : 0,
+      "amount18" : 129700,
+      "company" : "HAVELLS INDIA LTD",
+      "completed" : 1,
+      "date" : "2020-01-01",
+      "invoiceNo" : "5563092997"
+    },
+    "5563092998-2020-01-01" : {
+      "amount12" : 0,
+      "amount18" : 297881,
+      "company" : "HAVELLS INDIA LTD",
+      "completed" : 1,
+      "date" : "2020-01-01",
+      "invoiceNo" : "5563092998"
+    },
+    "5563093041-2020-01-02" : {
+      "amount12" : 140549,
+      "amount18" : 0,
+      "company" : "HAVELLS INDIA LTD",
+      "completed" : 1,
+      "date" : "2020-01-02",
+      "invoiceNo" : "5563093041"
+    },
+    "5563093042-2020-01-01" : {
+      "amount12" : 18523,
+      "amount18" : 0,
+      "company" : "HAVELLS INDIA LTD",
+      "completed" : 1,
+      "date" : "2020-01-01",
+      "invoiceNo" : "5563093042"
+    },
+    "5567-2020-01-04" : {
+      "amount12" : 0,
+      "amount18" : 12800,
+      "company" : "CREATIVE AGENCIES",
+      "completed" : 1,
+      "date" : "2020-01-04",
+      "invoiceNo" : "5567"
+    },
+    "5568-2020-01-04" : {
+      "amount12" : 0,
+      "amount18" : 17842,
+      "company" : "CREATIVE AGENCIES",
+      "completed" : 1,
+      "date" : "2020-01-04",
+      "invoiceNo" : "5568"
+    },
+    "5661181499-2020-01-01" : {
+      "amount12" : 0,
+      "amount18" : 53290,
+      "company" : "HAVELLS INDIA LTD",
+      "completed" : 1,
+      "date" : "2020-01-01",
+      "invoiceNo" : "5661181499"
+    },
+    "6048-2020-02-20" : {
+      "amount12" : 0,
+      "amount18" : 169512,
+      "company" : "SRI RAVI TADING CO",
+      "completed" : 1,
+      "date" : "2020-02-20",
+      "invoiceNo" : "6048"
+    },
+    "707-2020-02-14" : {
+      "amount12" : 0,
+      "amount18" : 3292,
+      "company" : "INDHU PLAZA",
+      "completed" : 1,
+      "date" : "2020-02-14",
+      "invoiceNo" : "707"
+    },
+    "860-2020-02-15" : {
+      "amount12" : 0,
+      "amount18" : 20798,
+      "company" : "GOWTAM AGENCIES",
+      "completed" : 1,
+      "date" : "2020-02-15",
+      "invoiceNo" : "860"
+    },
+    "CASH1823-2020-02-21" : {
+      "amount12" : 0,
+      "amount18" : 29878,
+      "company" : "MULTISTAR ELECTRICALS",
+      "completed" : 1,
+      "date" : "2020-02-21",
+      "invoiceNo" : "CASH1823"
+    },
+    "GENERAL12628-2020-02-05" : {
+      "amount12" : 0,
+      "amount18" : 8087,
+      "company" : "VINDHYA SRI ENTRPRISES",
+      "completed" : 1,
+      "date" : "2020-02-05",
+      "invoiceNo" : "GENERAL12628"
+    },
+    "PCP" : {
+      "4357" : {
+        "19-20-2020-01-11" : {
+          "amount12" : 0,
+          "amount18" : 19220,
+          "company" : "POONAM COPPER PRODUCTS",
+          "completed" : 1,
+          "date" : "2020-01-11",
+          "invoiceNo" : "PCP/4357/19-20"
+        }
+      }
+    },
+    "PTI" : {
+      "2232" : {
+        "19-20-2020-01-11" : {
+          "amount12" : 0,
+          "amount18" : 33105,
+          "company" : "PRADHAN TUBE INDIA -(2018-19)",
+          "completed" : 1,
+          "date" : "2020-01-11",
+          "invoiceNo" : "PTI/2232/19-20"
+        }
+      }
+    },
+    "SAN" : {
+      "GST" : {
+        "1041-2020-02-12" : {
+          "amount12" : 0,
+          "amount18" : 60849,
+          "company" : "SANCHETI ELECTRICAL LINES",
+          "completed" : 1,
+          "date" : "2020-02-12",
+          "invoiceNo" : "SAN/GST/1041"
+        },
+        "935-2020-01-11" : {
+          "amount12" : 0,
+          "amount18" : 59146,
+          "company" : "SANCHETI ELECTRICAL LINES",
+          "completed" : 1,
+          "date" : "2020-01-11",
+          "invoiceNo" : "SAN/GST/935"
+        }
+      }
+    },
+    "SJE" : {
+      "4649" : {
+        "19-20-2020-01-21" : {
+          "amount12" : 0,
+          "amount18" : 7039,
+          "company" : "SRI JAIN ELECTRICALS",
+          "completed" : 1,
+          "date" : "2020-01-21",
+          "invoiceNo" : "SJE/4649/19-20"
+        }
+      },
+      "4799" : {
+        "19-20-2020-02-01" : {
+          "amount12" : 0,
+          "amount18" : 5765,
+          "company" : "SRI JAIN ELECTRICALS",
+          "completed" : 1,
+          "date" : "2020-02-01",
+          "invoiceNo" : "SJE/4799/19-20"
+        }
+      },
+      "5177" : {
+        "19-20-2020-02-21" : {
+          "amount12" : 1339.5,
+          "amount18" : 16160.5,
+          "company" : "SRI JAIN ELECTRICALS",
+          "completed" : 1,
+          "date" : "2020-02-21",
+          "invoiceNo" : "SJE/5177/19-20"
+        }
+      }
+    },
+    "SR" : {
+      "2615-2020-01-30" : {
+        "amount12" : 17000,
+        "amount18" : 0,
+        "company" : "SR AGENCIES",
+        "completed" : 1,
+        "date" : "2020-01-30",
+        "invoiceNo" : "SR/2615"
+      }
+    },
+    "T-3289" : {
+      "19-20-2020-01-10" : {
+        "amount12" : 0,
+        "amount18" : 77197,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-01-10",
+        "invoiceNo" : "T-3289/19-20"
+      }
+    },
+    "T-3290" : {
+      "19-20-2020-01-10" : {
+        "amount12" : 0,
+        "amount18" : 117503,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-01-10",
+        "invoiceNo" : "T-3290/19-20"
+      }
+    },
+    "T-3291" : {
+      "19-20-2020-01-10" : {
+        "amount12" : 0,
+        "amount18" : 39501,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-01-10",
+        "invoiceNo" : "T-3291/19-20"
+      }
+    },
+    "T-3292" : {
+      "19-20-2020-01-10" : {
+        "amount12" : 0,
+        "amount18" : 18124,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-01-10",
+        "invoiceNo" : "T-3292/19-20"
+      }
+    },
+    "T-3293" : {
+      "19-20-2020-01-10" : {
+        "amount12" : 0,
+        "amount18" : 21302,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-01-10",
+        "invoiceNo" : "T-3293/19-20"
+      }
+    },
+    "T-3294" : {
+      "19-20-2020-01-10" : {
+        "amount12" : 0,
+        "amount18" : 19500,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-01-10",
+        "invoiceNo" : "T-3294/19-20"
+      }
+    },
+    "T-3295" : {
+      "19-20-2020-01-10" : {
+        "amount12" : 0,
+        "amount18" : 13269,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-01-10",
+        "invoiceNo" : "T-3295/19-20"
+      }
+    },
+    "T-3296" : {
+      "19-20-2020-01-10" : {
+        "amount12" : 0,
+        "amount18" : 1903,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-01-10",
+        "invoiceNo" : "T-3296/19-20"
+      }
+    },
+    "T-3508" : {
+      "19-20-2020-02-04" : {
+        "amount12" : 0,
+        "amount18" : 162117,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-04",
+        "invoiceNo" : "T-3508/19-20"
+      }
+    },
+    "T-3509" : {
+      "19-20-2020-02-04" : {
+        "amount12" : 0,
+        "amount18" : 25822,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-04",
+        "invoiceNo" : "T-3509/19-20"
+      }
+    },
+    "T-3510" : {
+      "19-20-2020-02-04" : {
+        "amount12" : 0,
+        "amount18" : 25440,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-04",
+        "invoiceNo" : "T-3510/19-20"
+      }
+    },
+    "T-3511" : {
+      "19-20-2020-02-04" : {
+        "amount12" : 0,
+        "amount18" : 57249,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-04",
+        "invoiceNo" : "T-3511/19-20"
+      }
+    },
+    "T-3512" : {
+      "19-20-2020-02-04" : {
+        "amount12" : 0,
+        "amount18" : 8243,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-04",
+        "invoiceNo" : "T-3512/19-20"
+      }
+    },
+    "T-3513" : {
+      "19-20-2020-02-04" : {
+        "amount12" : 0,
+        "amount18" : 12692,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-04",
+        "invoiceNo" : "T-3513/19-20"
+      }
+    },
+    "T-3777" : {
+      "19-20-2020-02-25" : {
+        "amount12" : 0,
+        "amount18" : 279783,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-25",
+        "invoiceNo" : "T-3777/19-20"
+      }
+    },
+    "T-3778" : {
+      "19-20-2020-02-25" : {
+        "amount12" : 0,
+        "amount18" : 26349,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-25",
+        "invoiceNo" : "T-3778/19-20"
+      }
+    },
+    "T-3779" : {
+      "19-20-2020-02-25" : {
+        "amount12" : 0,
+        "amount18" : 44253,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-25",
+        "invoiceNo" : "T-3779/19-20"
+      }
+    },
+    "T-3780" : {
+      "19-20-2020-02-25" : {
+        "amount12" : 0,
+        "amount18" : 14693,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-25",
+        "invoiceNo" : "T-3780/19-20"
+      }
+    },
+    "T-3781" : {
+      "19-20-2020-02-25" : {
+        "amount12" : 0,
+        "amount18" : 13460,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-25",
+        "invoiceNo" : "T-3781/19-20"
+      }
+    },
+    "T-3782" : {
+      "19-20-2020-02-25" : {
+        "amount12" : 0,
+        "amount18" : 117565,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-25",
+        "invoiceNo" : "T-3782/19-20"
+      }
+    },
+    "T-3783" : {
+      "19-20-2020-02-25" : {
+        "amount12" : 0,
+        "amount18" : 10986,
+        "company" : "HINDUSTAN ENTRPRISES",
+        "completed" : 1,
+        "date" : "2020-02-25",
+        "invoiceNo" : "T-3783/19-20"
+      }
+    },
+    "VJAC1920SSV10060-2020-01-06" : {
+      "amount12" : 6418,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-06",
+      "invoiceNo" : "VJAC1920SSV10060"
+    },
+    "VJAC1920SSV10061-2020-01-06" : {
+      "amount12" : 12835,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-06",
+      "invoiceNo" : "VJAC1920SSV10061"
+    },
+    "VJAC1920SSV10247-2020-01-13" : {
+      "amount12" : 0,
+      "amount18" : 182425,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-13",
+      "invoiceNo" : "VJAC1920SSV10247"
+    },
+    "VJAC1920SSV10412-2020-01-22" : {
+      "amount12" : 22127,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-22",
+      "invoiceNo" : "VJAC1920SSV10412"
+    },
+    "VJAC1920SSV10751-2020-01-30" : {
+      "amount12" : 12985,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-30",
+      "invoiceNo" : "VJAC1920SSV10751"
+    },
+    "VJAC1920SSV10753-2020-01-30" : {
+      "amount12" : 26232,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-30",
+      "invoiceNo" : "VJAC1920SSV10753"
+    },
+    "VJAC1920SSV10754-2020-01-30" : {
+      "amount12" : 41773,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-30",
+      "invoiceNo" : "VJAC1920SSV10754"
+    },
+    "VJAC1920SSV10755-2020-01-30" : {
+      "amount12" : 17531,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-30",
+      "invoiceNo" : "VJAC1920SSV10755"
+    },
+    "VJAC1920SSV10758-2020-01-30" : {
+      "amount12" : 241900,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-30",
+      "invoiceNo" : "VJAC1920SSV10758"
+    },
+    "VJAC1920SSV10764-2020-01-30" : {
+      "amount12" : 168067,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-30",
+      "invoiceNo" : "VJAC1920SSV10764"
+    },
+    "VJAC1920SSV10781-2020-01-31" : {
+      "amount12" : 70735,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-31",
+      "invoiceNo" : "VJAC1920SSV10781"
+    },
+    "VJAC1920SSV10782-2020-01-31" : {
+      "amount12" : 21863,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-31",
+      "invoiceNo" : "VJAC1920SSV10782"
+    },
+    "VJAC1920SSV10797-2020-01-31" : {
+      "amount12" : 28532,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-31",
+      "invoiceNo" : "VJAC1920SSV10797"
+    },
+    "VJAC1920SSV10798-2020-01-31" : {
+      "amount12" : 28532,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-31",
+      "invoiceNo" : "VJAC1920SSV10798"
+    },
+    "VJAC1920SSV10802-2020-01-31" : {
+      "amount12" : 19687,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-31",
+      "invoiceNo" : "VJAC1920SSV10802"
+    },
+    "VJAC1920SSV10803-2020-01-31" : {
+      "amount12" : 20764,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-31",
+      "invoiceNo" : "VJAC1920SSV10803"
+    },
+    "VJAC1920SSV10851-2020-01-31" : {
+      "amount12" : 131940,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-31",
+      "invoiceNo" : "VJAC1920SSV10851"
+    },
+    "VJAC1920SSV10952-2020-02-03" : {
+      "amount12" : 0,
+      "amount18" : 71307,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-03",
+      "invoiceNo" : "VJAC1920SSV10952"
+    },
+    "VJAC1920SSV10981-2020-02-04" : {
+      "amount12" : 91638,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-04",
+      "invoiceNo" : "VJAC1920SSV10981"
+    },
+    "VJAC1920SSV11181-2020-02-12" : {
+      "amount12" : 26046,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-12",
+      "invoiceNo" : "VJAC1920SSV11181"
+    },
+    "VJAC1920SSV11186-2020-02-12" : {
+      "amount12" : 107153,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-12",
+      "invoiceNo" : "VJAC1920SSV11186"
+    },
+    "VJAC1920SSV11299-2020-02-17" : {
+      "amount12" : 26198,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-17",
+      "invoiceNo" : "VJAC1920SSV11299"
+    },
+    "VJAC1920SSV11305-2020-02-17" : {
+      "amount12" : 95502,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-17",
+      "invoiceNo" : "VJAC1920SSV11305"
+    },
+    "VJAC1920SSV11306-2020-02-17" : {
+      "amount12" : 26576,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-17",
+      "invoiceNo" : "VJAC1920SSV11306"
+    },
+    "VJAC1920SSV11307-2020-02-17" : {
+      "amount12" : 36794,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-17",
+      "invoiceNo" : "VJAC1920SSV11307"
+    },
+    "VJAC1920SSV11331-2020-02-17" : {
+      "amount12" : 190049,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-17",
+      "invoiceNo" : "VJAC1920SSV11331"
+    },
+    "VJAC1920SSV11532-2020-02-24" : {
+      "amount12" : 97536,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-24",
+      "invoiceNo" : "VJAC1920SSV11532"
+    },
+    "VJAC1920SSV11533-2020-02-24" : {
+      "amount12" : 35909,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-24",
+      "invoiceNo" : "VJAC1920SSV11533"
+    },
+    "VJAC1920SSV11678-2020-02-28" : {
+      "amount12" : 0,
+      "amount18" : 105994,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-02-28",
+      "invoiceNo" : "VJAC1920SSV11678"
+    },
+    "VJAC1920SSV9940-2020-01-01" : {
+      "amount12" : 23102,
+      "amount18" : 0,
+      "company" : "CRI PUMPS (P) LTD",
+      "completed" : 1,
+      "date" : "2020-01-01",
+      "invoiceNo" : "VJAC1920SSV9940"
+    }
+  },
+  "sales" : {
+    "2020-01-01" : {
+      "completed" : 1,
+      "date" : "2020-01-01",
+      "salesAmt12" : 0,
+      "salesAmt18" : 0
+    },
+    "2020-01-03" : {
+      "completed" : 1,
+      "date" : "2020-01-03",
+      "salesAmt12" : 39300,
+      "salesAmt18" : 104451
+    },
+    "2020-01-04" : {
+      "completed" : 1,
+      "date" : "2020-01-04",
+      "salesAmt12" : 18400,
+      "salesAmt18" : 153542
+    },
+    "2020-01-06" : {
+      "completed" : 1,
+      "date" : "2020-01-06",
+      "salesAmt12" : 0,
+      "salesAmt18" : 268650
+    },
+    "2020-01-07" : {
+      "completed" : 1,
+      "date" : "2020-01-07",
+      "salesAmt12" : 199100,
+      "salesAmt18" : 56136
+    },
+    "2020-01-08" : {
+      "completed" : 1,
+      "date" : "2020-01-08",
+      "salesAmt12" : 27000,
+      "salesAmt18" : 112328
+    },
+    "2020-01-09" : {
+      "completed" : 1,
+      "date" : "2020-01-09",
+      "salesAmt12" : 18565,
+      "salesAmt18" : 206464
+    },
+    "2020-01-10" : {
+      "completed" : 1,
+      "date" : "2020-01-10",
+      "salesAmt12" : 0,
+      "salesAmt18" : 266533
+    },
+    "2020-01-11" : {
+      "completed" : 1,
+      "date" : "2020-01-11",
+      "salesAmt12" : 83500,
+      "salesAmt18" : 162805
+    },
+    "2020-01-13" : {
+      "completed" : 1,
+      "date" : "2020-01-13",
+      "salesAmt12" : 13500,
+      "salesAmt18" : 108264
+    },
+    "2020-01-14" : {
+      "completed" : 1,
+      "date" : "2020-01-14",
+      "salesAmt12" : 0,
+      "salesAmt18" : 141555
+    },
+    "2020-01-15" : {
+      "completed" : 1,
+      "date" : "2020-01-15",
+      "salesAmt12" : 40375,
+      "salesAmt18" : 109085
+    },
+    "2020-01-16" : {
+      "completed" : 1,
+      "date" : "2020-01-16",
+      "salesAmt12" : 0,
+      "salesAmt18" : 159320
+    },
+    "2020-01-17" : {
+      "completed" : 1,
+      "date" : "2020-01-17",
+      "salesAmt12" : 0,
+      "salesAmt18" : 176025
+    },
+    "2020-01-18" : {
+      "completed" : 1,
+      "date" : "2020-01-18",
+      "salesAmt12" : 0,
+      "salesAmt18" : 163505
+    },
+    "2020-01-20" : {
+      "completed" : 1,
+      "date" : "2020-01-20",
+      "salesAmt12" : 34540,
+      "salesAmt18" : 159590
+    },
+    "2020-01-21" : {
+      "completed" : 1,
+      "date" : "2020-01-21",
+      "salesAmt12" : 0,
+      "salesAmt18" : 169355
+    },
+    "2020-01-22" : {
+      "completed" : 1,
+      "date" : "2020-01-22",
+      "salesAmt12" : 0,
+      "salesAmt18" : 197295
+    },
+    "2020-01-23" : {
+      "completed" : 1,
+      "date" : "2020-01-23",
+      "salesAmt12" : 36725,
+      "salesAmt18" : 114990
+    },
+    "2020-01-25" : {
+      "completed" : 1,
+      "date" : "2020-01-25",
+      "salesAmt12" : 26500,
+      "salesAmt18" : 26544
+    },
+    "2020-01-27" : {
+      "completed" : 1,
+      "date" : "2020-01-27",
+      "salesAmt12" : 38500,
+      "salesAmt18" : 21810
+    },
+    "2020-01-28" : {
+      "completed" : 1,
+      "date" : "2020-01-28",
+      "salesAmt12" : 13500,
+      "salesAmt18" : 32761
+    },
+    "2020-01-29" : {
+      "completed" : 1,
+      "date" : "2020-01-29",
+      "salesAmt12" : 0,
+      "salesAmt18" : 44423
+    },
+    "2020-01-30" : {
+      "completed" : 1,
+      "date" : "2020-01-30",
+      "salesAmt12" : 86780,
+      "salesAmt18" : 32431
+    },
+    "2020-01-31" : {
+      "completed" : 1,
+      "date" : "2020-01-31",
+      "salesAmt12" : 3200,
+      "salesAmt18" : 126577
+    },
+    "2020-02-01" : {
+      "completed" : 1,
+      "date" : "2020-02-01",
+      "salesAmt12" : 106200,
+      "salesAmt18" : 95348
+    },
+    "2020-02-03" : {
+      "completed" : 1,
+      "date" : "2020-02-03",
+      "salesAmt12" : 109000,
+      "salesAmt18" : 92234
+    },
+    "2020-02-04" : {
+      "completed" : 1,
+      "date" : "2020-02-04",
+      "salesAmt12" : 95600,
+      "salesAmt18" : 103475
+    },
+    "2020-02-05" : {
+      "completed" : 1,
+      "date" : "2020-02-05",
+      "salesAmt12" : 22440,
+      "salesAmt18" : 132423
+    },
+    "2020-02-06" : {
+      "completed" : 1,
+      "date" : "2020-02-06",
+      "salesAmt12" : 69000,
+      "salesAmt18" : 64096
+    },
+    "2020-02-07" : {
+      "completed" : 1,
+      "date" : "2020-02-07",
+      "salesAmt12" : 13100,
+      "salesAmt18" : 171313
+    },
+    "2020-02-08" : {
+      "completed" : 1,
+      "date" : "2020-02-08",
+      "salesAmt12" : 21530,
+      "salesAmt18" : 165235
+    },
+    "2020-02-10" : {
+      "completed" : 1,
+      "date" : "2020-02-10",
+      "salesAmt12" : 27000,
+      "salesAmt18" : 206434
+    },
+    "2020-02-11" : {
+      "completed" : 1,
+      "date" : "2020-02-11",
+      "salesAmt12" : 0,
+      "salesAmt18" : 142496
+    },
+    "2020-02-12" : {
+      "completed" : 1,
+      "date" : "2020-02-12",
+      "salesAmt12" : 181620,
+      "salesAmt18" : 147535
+    },
+    "2020-02-13" : {
+      "completed" : 1,
+      "date" : "2020-02-13",
+      "salesAmt12" : 24620,
+      "salesAmt18" : 229131
+    },
+    "2020-02-14" : {
+      "completed" : 1,
+      "date" : "2020-02-14",
+      "salesAmt12" : 56160,
+      "salesAmt18" : 212875
+    },
+    "2020-02-15" : {
+      "completed" : 1,
+      "date" : "2020-02-15",
+      "salesAmt12" : 22990,
+      "salesAmt18" : 383520
+    },
+    "2020-02-17" : {
+      "completed" : 1,
+      "date" : "2020-02-17",
+      "salesAmt12" : 26000,
+      "salesAmt18" : 107227
+    },
+    "2020-02-18" : {
+      "completed" : 1,
+      "date" : "2020-02-18",
+      "salesAmt12" : 109500,
+      "salesAmt18" : 26772
+    },
+    "2020-02-19" : {
+      "completed" : 1,
+      "date" : "2020-02-19",
+      "salesAmt12" : 24800,
+      "salesAmt18" : 172983
+    },
+    "2020-02-20" : {
+      "completed" : 1,
+      "date" : "2020-02-20",
+      "salesAmt12" : 0,
+      "salesAmt18" : 130000
+    },
+    "2020-02-21" : {
+      "completed" : 1,
+      "date" : "2020-02-21",
+      "salesAmt12" : 82850,
+      "salesAmt18" : 222295
+    },
+    "2020-02-22" : {
+      "completed" : 1,
+      "date" : "2020-02-22",
+      "salesAmt12" : 0,
+      "salesAmt18" : 241320
+    },
+    "2020-02-24" : {
+      "completed" : 1,
+      "date" : "2020-02-24",
+      "salesAmt12" : 0,
+      "salesAmt18" : 239306
+    },
+    "2020-02-25" : {
+      "completed" : 1,
+      "date" : "2020-02-25",
+      "salesAmt12" : 90500,
+      "salesAmt18" : 155861
+    },
+    "2020-02-26" : {
+      "completed" : 1,
+      "date" : "2020-02-26",
+      "salesAmt12" : 47900,
+      "salesAmt18" : 219830
+    },
+    "2020-02-27" : {
+      "completed" : 1,
+      "date" : "2020-02-27",
+      "salesAmt12" : 91060,
+      "salesAmt18" : 110659
+    },
+    "2020-02-28" : {
+      "completed" : 1,
+      "date" : "2020-02-28",
+      "salesAmt12" : 22300,
+      "salesAmt18" : 83018
+    },
+    "2020-02-29" : {
+      "completed" : 1,
+      "date" : "2020-02-29",
+      "salesAmt12" : 0,
+      "salesAmt18" : 68785
+    },
+    "2283-2020-01-01" : {
+      "amount12" : 0,
+      "amount18" : 350,
+      "completed" : 1,
+      "date" : "2020-01-01",
+      "invoiceNo" : "2283",
+      "name" : "BYGGING INDIA LIMITED"
+    },
+    "2307-2020-01-03" : {
+      "amount12" : 0,
+      "amount18" : 20221,
+      "completed" : 1,
+      "date" : "2020-01-03",
+      "invoiceNo" : "2307",
+      "name" : "ISHAAN INFRA"
+    },
+    "2324-2020-01-06" : {
+      "amount12" : 1040,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-01-06",
+      "invoiceNo" : "2324",
+      "name" : "AKTINOS PHARMA PRIVATE LIMITED"
+    },
+    "2325-2020-01-06" : {
+      "amount12" : 0,
+      "amount18" : 2950,
+      "completed" : 1,
+      "date" : "2020-01-06",
+      "invoiceNo" : "2325",
+      "name" : "MAHI DRUGS PRIVATE LIMITED"
+    },
+    "2326-2020-01-06" : {
+      "amount12" : 3216.17,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-01-06",
+      "invoiceNo" : "2326",
+      "name" : "HAVELLS INDIA LIMITED VIJAYAWADA"
+    },
+    "2345-2020-01-07" : {
+      "amount12" : 0,
+      "amount18" : 275,
+      "completed" : 1,
+      "date" : "2020-01-07",
+      "invoiceNo" : "2345",
+      "name" : "LAURUS LABS"
+    },
+    "2352-2020-01-07" : {
+      "amount12" : 0,
+      "amount18" : 2216,
+      "completed" : 1,
+      "date" : "2020-01-07",
+      "invoiceNo" : "2352",
+      "name" : "VALARY LAB (P)LTD"
+    },
+    "2361-2020-01-07" : {
+      "amount12" : 1160,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-01-07",
+      "invoiceNo" : "2361",
+      "name" : "SRI GANGHADHAR PLASTIC (P) LTD"
+    },
+    "2365-2020-01-08" : {
+      "amount12" : 0,
+      "amount18" : 5846,
+      "completed" : 1,
+      "date" : "2020-01-08",
+      "invoiceNo" : "2365",
+      "name" : "SVDC REINFORCED PLASTICS"
+    },
+    "2366-2020-01-08" : {
+      "amount12" : 0,
+      "amount18" : 309,
+      "completed" : 1,
+      "date" : "2020-01-08",
+      "invoiceNo" : "2366",
+      "name" : "SVDC REINFORCED PLASTICS"
+    },
+    "2367-2020-01-08" : {
+      "amount12" : 0,
+      "amount18" : 810,
+      "completed" : 1,
+      "date" : "2020-01-08",
+      "invoiceNo" : "2367",
+      "name" : "MAHI DRUGS PRIVATE LIMITED"
+    },
+    "2368-2020-01-08" : {
+      "amount12" : 0,
+      "amount18" : 37635,
+      "completed" : 1,
+      "date" : "2020-01-08",
+      "invoiceNo" : "2368",
+      "name" : "T MURALI REDDY NTPC"
+    },
+    "2369-2020-01-08" : {
+      "amount12" : 0,
+      "amount18" : 20295,
+      "completed" : 1,
+      "date" : "2020-01-08",
+      "invoiceNo" : "2369",
+      "name" : "T MURALI REDDY NTPC"
+    },
+    "2370-2020-01-08" : {
+      "amount12" : 0,
+      "amount18" : 1220,
+      "completed" : 1,
+      "date" : "2020-01-08",
+      "invoiceNo" : "2370",
+      "name" : "T MURALI REDDY NTPC"
+    },
+    "2399-2020-01-11" : {
+      "amount12" : 0,
+      "amount18" : 18800,
+      "completed" : 1,
+      "date" : "2020-01-11",
+      "invoiceNo" : "2399",
+      "name" : "T MURALI REDDY NTPC"
+    },
+    "2401-2020-01-11" : {
+      "amount12" : 0,
+      "amount18" : 1380,
+      "completed" : 1,
+      "date" : "2020-01-11",
+      "invoiceNo" : "2401",
+      "name" : "HI TECH EQUIPMENT & FABICATION"
+    },
+    "2417-2020-01-13" : {
+      "amount12" : 0,
+      "amount18" : 18475,
+      "completed" : 1,
+      "date" : "2020-01-13",
+      "invoiceNo" : "2417",
+      "name" : "RAKSHIT DRUGS PVT LTD"
+    },
+    "2418-2020-01-13" : {
+      "amount12" : 0,
+      "amount18" : 10522,
+      "completed" : 1,
+      "date" : "2020-01-13",
+      "invoiceNo" : "2418",
+      "name" : "RAKSHIT DRUGS PVT LTD"
+    },
+    "2419-2020-01-13" : {
+      "amount12" : 0,
+      "amount18" : 15230,
+      "completed" : 1,
+      "date" : "2020-01-13",
+      "invoiceNo" : "2419",
+      "name" : "RAKSHIT DRUGS PVT LTD"
+    },
+    "2474-2020-01-24" : {
+      "amount12" : 0,
+      "amount18" : 280,
+      "completed" : 1,
+      "date" : "2020-01-24",
+      "invoiceNo" : "2474",
+      "name" : "CHAITANYA PIPES N PIPES"
+    },
+    "2475-2020-01-24" : {
+      "amount12" : 0,
+      "amount18" : 2225,
+      "completed" : 1,
+      "date" : "2020-01-24",
+      "invoiceNo" : "2475",
+      "name" : "RAKSHIT DRUGS PVT LTD"
+    },
+    "2486-2020-01-25" : {
+      "amount12" : 0,
+      "amount18" : 6400,
+      "completed" : 1,
+      "date" : "2020-01-25",
+      "invoiceNo" : "2486",
+      "name" : "RAKSHIT PHARMACEUTICALS LIMITED"
+    },
+    "2495-2020-01-27" : {
+      "amount12" : 0,
+      "amount18" : 27390,
+      "completed" : 1,
+      "date" : "2020-01-27",
+      "invoiceNo" : "2495",
+      "name" : "DILLEP TRANSPORT"
+    },
+    "2497-2020-01-27" : {
+      "amount12" : 0,
+      "amount18" : 600,
+      "completed" : 1,
+      "date" : "2020-01-27",
+      "invoiceNo" : "2497",
+      "name" : "BEEKAY STEEL INDUSTRIES LIMITED"
+    },
+    "2498-2020-01-27" : {
+      "amount12" : 0,
+      "amount18" : 1095,
+      "completed" : 1,
+      "date" : "2020-01-27",
+      "invoiceNo" : "2498",
+      "name" : "RANAR AGRO CHEMICALS LTD"
+    },
+    "2499-2020-01-27" : {
+      "amount12" : 0,
+      "amount18" : 1432,
+      "completed" : 1,
+      "date" : "2020-01-27",
+      "invoiceNo" : "2499",
+      "name" : "VIMAL DRUGS"
+    },
+    "2500-2020-01-27" : {
+      "amount12" : 0,
+      "amount18" : 1702,
+      "completed" : 1,
+      "date" : "2020-01-27",
+      "invoiceNo" : "2500",
+      "name" : "VIMAL DRUGS"
+    },
+    "2505-2020-01-27" : {
+      "amount12" : 0,
+      "amount18" : 14695,
+      "completed" : 1,
+      "date" : "2020-01-27",
+      "invoiceNo" : "2505",
+      "name" : "MURALI REDDY TIPPANA"
+    },
+    "2512-2020-01-28" : {
+      "amount12" : 0,
+      "amount18" : 11700,
+      "completed" : 1,
+      "date" : "2020-01-28",
+      "invoiceNo" : "2512",
+      "name" : "MURALI REDDY TIPPANA"
+    },
+    "2513-2020-01-28" : {
+      "amount12" : 0,
+      "amount18" : 49925,
+      "completed" : 1,
+      "date" : "2020-01-28",
+      "invoiceNo" : "2513",
+      "name" : "SRI SAI SAMPATH CONSTRUCTIONS (APPARAO PYLA)"
+    },
+    "2514-2020-01-28" : {
+      "amount12" : 0,
+      "amount18" : 49050,
+      "completed" : 1,
+      "date" : "2020-01-28",
+      "invoiceNo" : "2514",
+      "name" : "SRI SAI SAMPATH CONSTRUCTIONS (APPARAO PYLA)"
+    },
+    "2516-2020-01-29" : {
+      "amount12" : 12000,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-01-29",
+      "invoiceNo" : "2516",
+      "name" : "DEVI ENTERPRISES (ANIPEDDI GIRI BHANUSREE)"
+    },
+    "2517-2020-01-29" : {
+      "amount12" : 0,
+      "amount18" : 2550,
+      "completed" : 1,
+      "date" : "2020-01-29",
+      "invoiceNo" : "2517",
+      "name" : "PRABHAT ENGINEERING"
+    },
+    "2518-2020-01-29" : {
+      "amount12" : 12200,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-01-29",
+      "invoiceNo" : "2518",
+      "name" : "DEVI ENTERPRISES (ANIPEDDI GIRI BHANUSREE)"
+    },
+    "2544-2020-02-01" : {
+      "amount12" : 0,
+      "amount18" : 5220,
+      "completed" : 1,
+      "date" : "2020-02-01",
+      "invoiceNo" : "2544",
+      "name" : "SAI RAM CHEMICALS"
+    },
+    "2545-2020-02-01" : {
+      "amount12" : 0,
+      "amount18" : 564,
+      "completed" : 1,
+      "date" : "2020-02-01",
+      "invoiceNo" : "2545",
+      "name" : "STAR PRO AQUA"
+    },
+    "2557-2020-02-01" : {
+      "amount12" : 12800,
+      "amount18" : 12800,
+      "completed" : 1,
+      "date" : "2020-02-01",
+      "invoiceNo" : "2557",
+      "name" : "DEVI ENTERPRISES (ANIPEDDI GIRI BHANUSREE)"
+    },
+    "2590-2020-02-06" : {
+      "amount12" : 0,
+      "amount18" : 3676,
+      "completed" : 1,
+      "date" : "2020-02-06",
+      "invoiceNo" : "2590",
+      "name" : "SVDC REINFORCED PLASTICS"
+    },
+    "2593-2020-02-06" : {
+      "amount12" : 34800,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-02-06",
+      "invoiceNo" : "2593",
+      "name" : "DEVI ENTERPRISES (ANIPEDDI GIRI BHANUSREE)"
+    },
+    "2599-2020-02-06" : {
+      "amount12" : 0,
+      "amount18" : 8116,
+      "completed" : 1,
+      "date" : "2020-02-06",
+      "invoiceNo" : "2599",
+      "name" : "JAI BHARATH ENTERPRISES"
+    },
+    "2601-2020-02-07" : {
+      "amount12" : 0,
+      "amount18" : 7665,
+      "completed" : 1,
+      "date" : "2020-02-07",
+      "invoiceNo" : "2601",
+      "name" : "SRI VYJAYANTHI (P) LTD"
+    },
+    "2602-2020-02-07" : {
+      "amount12" : 0,
+      "amount18" : 977,
+      "completed" : 1,
+      "date" : "2020-02-07",
+      "invoiceNo" : "2602",
+      "name" : "SRI VYJAYANTHI (P) LTD"
+    },
+    "2605-2020-02-07" : {
+      "amount12" : 0,
+      "amount18" : 25217,
+      "completed" : 1,
+      "date" : "2020-02-07",
+      "invoiceNo" : "2605",
+      "name" : "SRI KRISHNA CHEMICALS"
+    },
+    "2612-2020-02-08" : {
+      "amount12" : 12000,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-02-08",
+      "invoiceNo" : "2612",
+      "name" : "DEVI ENTERPRISES (ANIPEDDI GIRI BHANUSREE)"
+    },
+    "2623-2020-02-10" : {
+      "amount12" : 0,
+      "amount18" : 3300,
+      "completed" : 1,
+      "date" : "2020-02-10",
+      "invoiceNo" : "2623",
+      "name" : "DEVI ENTERPRISES (ANIPEDDI GIRI BHANUSREE)"
+    },
+    "2628-2020-02-10" : {
+      "amount12" : 780,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-02-10",
+      "invoiceNo" : "2628",
+      "name" : "SRI VYJAYANTHI (P) LTD"
+    },
+    "2630-2020-02-10" : {
+      "amount12" : 0,
+      "amount18" : 1045,
+      "completed" : 1,
+      "date" : "2020-02-10",
+      "invoiceNo" : "2630",
+      "name" : "SRI VYJAYANTHI (P) LTD"
+    },
+    "2643-2020-02-12" : {
+      "amount12" : 0,
+      "amount18" : 12710,
+      "completed" : 1,
+      "date" : "2020-02-12",
+      "invoiceNo" : "2643",
+      "name" : "MURALI REDDY TIPPANA"
+    },
+    "2655-2020-02-12" : {
+      "amount12" : 0,
+      "amount18" : 2250,
+      "completed" : 1,
+      "date" : "2020-02-12",
+      "invoiceNo" : "2655",
+      "name" : "VISHNU CHEMICALS (P) LTD"
+    },
+    "2656-2020-02-12" : {
+      "amount12" : 0,
+      "amount18" : 7108,
+      "completed" : 1,
+      "date" : "2020-02-12",
+      "invoiceNo" : "2656",
+      "name" : "CHEPALA MASENU"
+    },
+    "2695-2020-02-17" : {
+      "amount12" : 36200,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-02-17",
+      "invoiceNo" : "2695",
+      "name" : "DEVI ENTERPRISES (ANIPEDDI GIRI BHANUSREE)"
+    },
+    "2697-2020-02-17" : {
+      "amount12" : 0,
+      "amount18" : 4000,
+      "completed" : 1,
+      "date" : "2020-02-17",
+      "invoiceNo" : "2697",
+      "name" : "PHALANX LABS PRIVATE LIMITED"
+    },
+    "2701-2020-02-18" : {
+      "amount12" : 0,
+      "amount18" : 19600,
+      "completed" : 1,
+      "date" : "2020-02-18",
+      "invoiceNo" : "2701",
+      "name" : "DEVI ENTERPRISES (ANIPEDDI GIRI BHANUSREE)"
+    },
+    "2704-2020-02-18" : {
+      "amount12" : 0,
+      "amount18" : 1585,
+      "completed" : 1,
+      "date" : "2020-02-18",
+      "invoiceNo" : "2704",
+      "name" : "THE NTPC LL CHEPURAPALLI MALCCS LTD"
+    },
+    "2722-2020-02-21" : {
+      "amount12" : 0,
+      "amount18" : 6555,
+      "completed" : 1,
+      "date" : "2020-02-21",
+      "invoiceNo" : "2722",
+      "name" : "MURALI REDDY TIPPANA"
+    },
+    "2726-2020-02-21" : {
+      "amount12" : 0,
+      "amount18" : 4088,
+      "completed" : 1,
+      "date" : "2020-02-21",
+      "invoiceNo" : "2726",
+      "name" : "HI WOOD PLASTOTECH"
+    },
+    "2746-2020-02-21" : {
+      "amount12" : 0,
+      "amount18" : 4577,
+      "completed" : 1,
+      "date" : "2020-02-21",
+      "invoiceNo" : "2746",
+      "name" : "SRI SRINIVASA TRANSPORT"
+    },
+    "2747-2020-02-21" : {
+      "amount12" : 0,
+      "amount18" : 3873,
+      "completed" : 1,
+      "date" : "2020-02-21",
+      "invoiceNo" : "2747",
+      "name" : "SRI SRINIVASA TRANSPORT"
+    },
+    "2764-2020-02-24" : {
+      "amount12" : 0,
+      "amount18" : 19000,
+      "completed" : 1,
+      "date" : "2020-02-24",
+      "invoiceNo" : "2764",
+      "name" : "DEVI ENTERPRISES (ANIPEDDI GIRI BHANUSREE)"
+    },
+    "2780-2020-02-25" : {
+      "amount12" : 54000,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-02-25",
+      "invoiceNo" : "2780",
+      "name" : "SRI VIJAYA DURGA ELECTRICALS"
+    },
+    "2796-2020-02-27" : {
+      "amount12" : 0,
+      "amount18" : 36103,
+      "completed" : 1,
+      "date" : "2020-02-27",
+      "invoiceNo" : "2796",
+      "name" : "MURALI REDDY TIPPANA"
+    },
+    "2797-2020-02-27" : {
+      "amount12" : 0,
+      "amount18" : 22000,
+      "completed" : 1,
+      "date" : "2020-02-27",
+      "invoiceNo" : "2797",
+      "name" : "MURALI REDDY TIPPANA"
+    },
+    "2798-2020-02-27" : {
+      "amount12" : 0,
+      "amount18" : 2112,
+      "completed" : 1,
+      "date" : "2020-02-27",
+      "invoiceNo" : "2798",
+      "name" : "AVRA LABORATORIES PVT LTD"
+    },
+    "2803-2020-02-27" : {
+      "amount12" : 0,
+      "amount18" : 1750,
+      "completed" : 1,
+      "date" : "2020-02-27",
+      "invoiceNo" : "2803",
+      "name" : "MAHIMA TRADERS"
+    },
+    "2807-2020-02-27" : {
+      "amount12" : 0,
+      "amount18" : 950,
+      "completed" : 1,
+      "date" : "2020-02-27",
+      "invoiceNo" : "2807",
+      "name" : "HI WOOD PLASTOTECH"
+    },
+    "2808-2020-02-27" : {
+      "amount12" : 1800,
+      "amount18" : 0,
+      "completed" : 1,
+      "date" : "2020-02-27",
+      "invoiceNo" : "2808",
+      "name" : "SATYA LAKSHMI ENGINEERING"
+    }
+  }
+}
