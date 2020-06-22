@@ -5,7 +5,7 @@
 			<label for="Company">Company:</label>
 			<select class="selectpicker form-control" data-show-subtext="true" [(ngModel)]="company" data-live-search="true" name="company">
 				<option value="none">None</option>
-				<option *ngFor="let dealer of dealers" value="{{dealer.key}}">{{dealer.company}}</option>
+				<option *ngFor="let dealer of dealers" value="{{dealer.company}}">{{dealer.company}}</option>
 			</select>
 		</div>
 		<div class="form-group col-xs-2">
@@ -17,21 +17,21 @@
 				<input type="date" class="form-control" style="width:280px;" [(ngModel)]="toDate" name="date" placeholder="Enter To Date">
 		</div>
 
-				</div>
-				<div class="row">
-					<div class="form-group col-xs-3">
-						<label for="name">Name of the Excel:</label>
-						<input id="filename" type="text" class="form-control" placeholder="Enter Name" required>
+			</div>
+			<div class="row">
+				<div class="form-group col-xs-3">
+					<label for="name">Name of the Excel:</label>
+					<input id="filename" type="text" class="form-control" placeholder="Enter Name" required>
  			 </div>
-			 <div class="form-group col-xs-2">
-				 <div>
-					 <input type="radio" name="option" id="radio" [(ngModel)]="percent" value ='12'>
-					 <label for="12">12%</label>
-				 </div>
-				 <div>
-					 <input type="radio" name="option" id="radio" [(ngModel)]="percent" value ='18'>
-					 <label for="18">18%</label>
-				 </div>
+					<div class="form-group col-xs-2">
+						<div>
+							<input type="radio" name="option" id="radio" [(ngModel)]="percent" value ='12'>
+							<label for="12">12%</label>
+						</div>
+						<div>
+							<input type="radio" name="option" id="radio" [(ngModel)]="percent" value ='18'>
+							<label for="18">18%</label>
+						</div>
 					</div>
 					<div class="form-group col-xs-3">
 						<button class="btn btn-link col-xs-1" (click)='getData()'>Get</button>
@@ -39,6 +39,6 @@
 					</div>
 				</div>
 				<div class="container" *ngIf="rowData">
-					<ag-grid-angular #agGrid pagination style="width: 90%; height:400px" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs" (gridReady)="onGridReady($event)">
+					<ag-grid-angular #agGrid style="width: 100%; height:400px" class="ag-theme-balham" [rowData]="rowData" [columnDefs]="columnDefs" (gridReady)="onGridReady($event)">
 					</ag-grid-angular>
 				</div>

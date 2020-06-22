@@ -18,27 +18,29 @@ export class ExcelSheetsComponent implements OnInit {
 	fromDate: Date;
 	toDate: Date = new Date();
 	QueryData: any;
-	percent: any;
+	percent: any = '18';
 	gridApi: any;
+	gridColumnApi: any;
+
 	col12 = [
 			{headerName: 'Company', field: 'company', sortable: true, filter: true },
+			{headerName: 'GST/TIN', field: 'gstNO', sortable: true, filter: true },
 			{headerName: 'Invoice Date', field: 'date', sortable: true, filter: true },
 			{headerName: 'Invoice No', field: 'invoiceNo', filter: true},
+			{headerName: 'Value', field: 'value' },
+			{headerName: 'State Tax', field: 'stateTax' },
+			{headerName: 'Central Tax', field: 'centralTax'},
 			{headerName: 'Amount 12%', field: 'amount12', sortable: true, filter: true}
 	];
 
-	col18 =  [
+	col18 = [
 			{headerName: 'Company', field: 'company', sortable: true, filter: true },
+			{headerName: 'GST/TIN', field: 'gstNO', sortable: true, filter: true },
 			{headerName: 'Invoice Date', field: 'date', sortable: true, filter: true },
 			{headerName: 'Invoice No', field: 'invoiceNo', filter: true},
-			{headerName: 'Amount 18%', field: 'amount18', sortable: true, filter: true}
-	];
-
-	cols =  [
-			{headerName: 'Company', field: 'company', sortable: true, filter: true },
-			{headerName: 'Invoice Date', field: 'date', sortable: true, filter: true },
-			{headerName: 'Invoice No', field: 'invoiceNo', filter: true},
-			{headerName: 'Amount 12%', field: 'amount12', sortable: true, filter: true},
+			{headerName: 'Value', field: 'value' },
+			{headerName: 'State Tax', field: 'stateTax' },
+			{headerName: 'Central Tax', field: 'centralTax'},
 			{headerName: 'Amount 18%', field: 'amount18', sortable: true, filter: true}
 	];
 
@@ -47,10 +49,15 @@ export class ExcelSheetsComponent implements OnInit {
 
 	constructor(private dataProviderService: DataProviderService) {
 		this.dealers= dataProviderService.getDealers();
-		console.log(this.dealers);
 	}
 
 	ngOnInit() {}
+
+	findGSTNO(company:string){
+		for(let i=0;i<this.dealers.length;i++)
+			if(this.dealers[i].company == company)
+				return this.dealers[i].gstNo;
+	}
 
 	checkDate(object){
 		if(this.fromDate && this.toDate){
@@ -72,8 +79,19 @@ export class ExcelSheetsComponent implements OnInit {
 							 this.getObj(obj[prop],out);
 						} else{
 							if(this.checkDate(obj) && (this.company=='none' ||this.company == obj.company)){
-								out.push(obj);
-
+									obj.gstNO = this.findGSTNO(obj.company);
+								if(this.percent == '18' && obj.amount18!=0 && obj.amount12==0){
+									obj.value = Math.floor(obj.amount18 / 1.18);
+									obj.stateTax = Math.floor((obj.amount18 - obj.value) / 2);
+									obj.centralTax = obj.stateTax;
+									out.push(obj);
+								}
+								else if(this.percent == '12' && obj.amount12!=0 && obj.amount18==0){
+									obj.value = Math.floor(obj.amount12 / 1.12);
+									obj.stateTax = Math.floor((obj.amount12 - obj.value) / 2);
+									obj.centralTax = obj.stateTax;
+									out.push(obj);
+								}
 							}
 							return;
 						}
@@ -95,8 +113,8 @@ export class ExcelSheetsComponent implements OnInit {
 	getQueryData(data: any){
 		let obj =[];
 		this.getObj(data,obj);
-		this.columnDefs = this.percent == '12' ? this.col12 : this.cols;
-		this.columnDefs = this.percent == '18' ? this.col18 : this.columnDefs;
+		console.log(obj);
+		this.columnDefs = this.percent == '12' ? this.col12 : this.col18;
     this.rowData = obj;
 	}
 
