@@ -15,6 +15,7 @@ import { AgGridModule } from 'ag-grid-angular';
 
 import { DataProviderService } from './data-provider.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,

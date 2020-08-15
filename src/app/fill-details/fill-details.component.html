@@ -19,7 +19,7 @@
 				<div class="form-group">
 					<label for="Company">Company:</label>
 			 		<select class="selectpicker form-control" data-show-subtext="true" data-live-search="true" [(ngModel)]="purchase.company" name="company">
-			 			<option *ngFor="let dealer of dealers" value="{{dealer}}">{{dealer}}</option>
+			 			<option *ngFor="let dealer of dealers" value="{{dealer.company}}">{{dealer.company}}</option>
 					</select>
 					<button class="btn btn-link" (click)="showAddDealerDiv='true'">Add New Company</button>
 				</div>
@@ -83,7 +83,7 @@
 				<div class="form-group">
 					<label for="Customer">Customer:</label>
 			 		<select class="selectpicker form-control" data-show-subtext="true" data-live-search="true" [(ngModel)]="salesGstCustomer" name="Customer">
-			 			<option *ngFor="let customer of customers" value="{{customer}}">{{customer}}</option>
+			 			<option *ngFor="let customer of customers" value="{{customer.name}}">{{customer.name}}</option>
 					</select>
 					<button class="btn btn-link" (click)="showAddCustomersDiv='true'">Add New Customer</button>
 				</div>

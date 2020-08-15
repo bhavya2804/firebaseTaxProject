@@ -25,19 +25,19 @@ export class DataProviderService {
 		let customersData = [];
 		let db = firebase.database().ref("customers");
 		db.on('child_added', function(snapshot) {
-			customersData.push(snapshot.key);
+			customersData.push({name:snapshot.key,gstNo:snapshot.val().gstNo,phoneNo:snapshot.val().phoneNo});
 		});
 		return customersData;
 	}
 
-	getQueryData(){
-		var ref = firebase.database().ref("purchase");
-	  return ref.once('value').then(function(snapshot) {
-	    return snapshot.val();
-	  });
+	getQueryData(table){
+			var ref = firebase.database().ref(table);
+		  return ref.once('value').then(function(snapshot) {
+		   	return snapshot.val();
+		 });
 	}
 
-	getExcelObject() {
+	 getExcelObject() {
 		let Purchase18object = [];
 		let Purchase12object = [];
 		let saleGst318object = [];
@@ -239,6 +239,6 @@ export class DataProviderService {
 			object[5]=saleGst118object;
 
 			return object;
-		}
-
 	}
+
+}

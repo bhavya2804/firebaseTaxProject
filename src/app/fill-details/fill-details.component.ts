@@ -29,8 +29,8 @@ export class FillDetailsComponent implements OnInit {
   purchaseInt={
     "company":"",
     "date":"",
-    "amount12":"",
-    "amount18":"",
+    "amount12":"0",
+    "amount18":"0",
     "invoiceNo":""
   };
   purchase={
@@ -66,8 +66,8 @@ export class FillDetailsComponent implements OnInit {
   {
     this.dealers= dataProviderService.getDealers();
     this.customers= dataProviderService.getCustomers();
-    this.tableData = dataProviderService.getExcelObject();
-    console.log(this.tableData);
+    // this.tableData = dataProviderService.getExcelObject();
+
   }
 
   ngOnInit()
@@ -111,7 +111,7 @@ export class FillDetailsComponent implements OnInit {
   saveDetails(text:string):void{
     if(text=='Purchase'){
       firebase.database().ref("purchase/"+this.purchase.invoiceNo+'-'+this.purchase.date).set({
-          company:this.purchase.company,
+          name:this.purchase.company,
           date:this.purchase.date,
           amount12:eval(this.purchase.amount12),
           amount18:eval(this.purchase.amount18),
@@ -131,8 +131,8 @@ export class FillDetailsComponent implements OnInit {
     else if(text=='Sales'){
       firebase.database().ref("sales/"+this.salesDate).set({
           date:this.salesDate,
-          salesAmt12:eval(this.salesAmt12)>0?eval(this.salesAmt12):0,
-          salesAmt18:eval(this.salesAmt18)>0?eval(this.salesAmt18):0,
+          amount12:eval(this.salesAmt12)>0?eval(this.salesAmt12):0,
+          amount18:eval(this.salesAmt18)>0?eval(this.salesAmt18):0,
           completed: 0,
           create_time:new Date().toLocaleString()
   			},function(error) {
